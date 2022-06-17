@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+#CSR>header{
+    width: 100%;
+    height: 800px;
+    margin-bottom: 100px;
+    background: url("/image/csr/main_csr2.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+#CSR>header>h3>span:first-child{
+    margin-bottom: 20px;
+}
+#CSR>header>h3>span:last-child{
+    line-height: 83px;
+}
+
+
+/*  */
+#CSR>section{
+    width: 1440px;
+    margin: 0 auto 100px;
+}
+#CSR>section:nth-child(2)>ul{
+    display: flex;
+    justify-content: space-between;
+}
+#CSR>section:nth-child(2)>ul li{
+    width: 660px;
+}
+#CSR>section:nth-child(2)>ul li>figure>img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
+    object-fit: cover;
+}
+#CSR>section:nth-child(2)>ul li>figure>figcaption>dl>dt{
+    margin-bottom: 18px;
+    font-size: 45px;
+    font-weight: bold;
+    color: #af0046;
+}
+#CSR>section:nth-child(2)>ul li>figure>figcaption>dl>dd{
+    font-size: 27px;
+    line-height: 45px;
+}
+
+#CSR>section>h4{
+    font-size: 45px;
+}
+#CSR>section>p{
+    width: 660px;
+    font-size: 27px;
+    line-height: 45px;
+}
+
+
+/* 지속가능경영보고서 */
+#CSR>section:nth-child(3)>ul{
+    overflow: hidden;
+}
+#CSR>section:nth-child(3)>ul li{
+    float: left;
+    width: 340px;
+    padding: 27px;
+    margin: 0 calc(80px/3) calc(80px/3) 0;
+    box-sizing: border-box;
+    background: url("/image/csr/lg1.jpg") no-repeat center;
+    background-size: cover;
+}
+#CSR>section:nth-child(3)>ul li:nth-child(4n){
+    margin-right: 0;
+}
+#CSR>section:nth-child(3)>ul li:nth-child(9){
+    margin-bottom: 0;
+}
+#CSR>section:nth-child(3)>ul li:nth-child(10){
+    margin-bottom: 0;
+}
+#CSR>section:nth-child(3)>ul li>dl{
+    color: #fff;
+}
+#CSR>section:nth-child(3)>ul li>dl>dt{
+    margin-bottom: 18px;
+}
+#CSR>section:nth-child(3)>ul li>dl>dd:nth-child(2){
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 63px;
+}
+#CSR>section:nth-child(3)>ul li>dl>dd:nth-child(3){
+    float: right;
+    padding: 0 20px 0 27px;
+    line-height: 45px;
+    border-radius: 30px 30px;
+    color: #656565;
+    background-color: #dedede;
+}
+#CSR>section:nth-child(3)>ul li>dl>dd:nth-child(3)>a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#CSR>section:nth-child(3)>ul li>dl>dd:nth-child(3)>a>i{
+    width: 18px;
+    height: 18px;
+    margin-left: 9px;
+    background: url("/image/download.png") no-repeat center;
+    background-size: cover;
+}
+#CSR>section:nth-child(3)>ul li>dl>dd:nth-child(3):hover{
+    color: #fff;
+    background-color: #af0046;
+}
+#CSR>section:nth-child(3)>ul li>dl>dd:nth-child(3):hover>a>i{
+    background-image: url("/image/download_W.png");
+}
+
+/* 보고서 이미지 정리 */
+#CSR>section:nth-child(3)>ul li:nth-child(2){
+    background: url("/image/csr/lg2.jpg") no-repeat;
+    background-size: cover;
+}
+#CSR>section:nth-child(3)>ul li:nth-child(3){
+    background: url("/image/csr/lg3.png") no-repeat;
+    background-size: cover;
+}
+#CSR>section:nth-child(3)>ul li:nth-child(4){
+    background: url("/image/csr/lg4.jpeg") no-repeat;
+    background-size: cover;
+}
+#CSR>section:nth-child(3)>ul li:nth-child(5){
+    background: url("/image/csr/lg5.jpg") no-repeat right 55% center;
+    background-size: cover;
+}
+#CSR>section:nth-child(3)>ul li:nth-child(6){
+    background: url("/image/csr/lg6.jpeg") no-repeat center;
+    background-size: cover;
+}
+#CSR>section:nth-child(3)>ul li:nth-child(7){
+    background: url("/image/csr/lg7.png") no-repeat center;
+    background-size: cover;
+}
+#CSR>section:nth-child(3)>ul li:nth-child(8){
+    background: url("/image/csr/lg8.png") no-repeat left center;
+    background-size: cover;
+}
+#CSR>section:nth-child(3)>ul li:nth-child(9){
+    background: url("/image/csr/lg9.jpeg") no-repeat center;
+    background-size: cover;
+}
+#CSR>section:nth-child(3)>ul li:nth-child(10){
+    background: url("/image/csr/lg10.jpg") no-repeat center;
+    background-size: cover;
+}

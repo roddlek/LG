@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+#LGWayVision, #LGWayManage{
+    width: 75.789473684210526%;
+    /* width: 1440px; */
+    margin: 0 auto 100px;
+}
+section{
+    margin-bottom: 100px;
+}
+section h4{
+    font-size: 63px;
+    color: #af0043;
+    font-weight: bold;
+    margin-bottom: 27px;
+}
+section h4 + p{
+    width: 720px;
+    font-size: 27px;
+    line-height: 36px;
+    margin-bottom: 50px;
+}
+
+/* main */
+main>article>header{
+    width: 100%;
+    height: 800px;
+    margin-bottom: 50px;
+    background: url("/image/lg/main_lg1.jpeg") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+/* scroll button -> padge_common.css */
+
+
+/*  */
+#LGWayAbout{
+    width: 100%;
+    background: url("/image/lg/sec_back.png") repeat-y left top;
+    background-size: 50%;
+    background-color: #f1f1f1;
+}
+#LGWayAbout>div{
+    width: 75.789473684210526%;
+    /* width: 1440px; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#LGWayAbout>div>div, #LGWayAbout>div>ul{
+    width: 43.055555555555556%;
+    /* width: 620px; */
+    padding: 100px 0;
+}
+#LGWayAbout>div>div>p{
+    color: #fff;
+}
+#LGWayAbout>div>div>p:first-child{
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 54px;
+    margin-bottom: 30px;
+}
+#LGWayAbout>div>div>p:last-child{
+    font-size: 27px;
+    line-height: 36px;
+    font-weight: 300;
+}
+#LGWayAbout>div>ul li{
+    margin-bottom: 30px;
+    padding: 5px 0 0 100px;
+    background: url("/image/lg/vision_icon1.png") no-repeat left top;
+}
+#LGWayAbout>div>ul li:nth-child(2){
+    background-image: url("/image/lg/vision_icon2.png");
+}
+#LGWayAbout>div>ul li:last-child{
+    margin-bottom: 0;
+    background-image: url("/image/lg/vision_icon3.png");
+}
+#LGWayAbout>div>ul li>dl>dt{
+    margin-bottom: 18px;
+    font-size: 36px;
+    color: #af0043;
+}
+#LGWayAbout>div>ul li>dl>dd{
+    line-height: 27px;
+}
+
+
+/* lg 비전 */
+#LGWayVision{
+    overflow: hidden;
+}
+#LGWayVision>ul{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+#LGWayVision>ul li{
+    width: 48.611111111111111%;
+    /* width: 700px; */
+    margin-bottom: 40px;
+    border: 1px solid #dedede;
+    box-sizing: border-box;
+}
+#LGWayVision>ul li>figure>img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+#LGWayVision>ul li>figure>figcaption{
+    padding: 30px;
+}
+#LGWayVision>ul li>figure>figcaption>dl>dt{
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+#LGWayVision>ul li>figure>figcaption>dl>dd{
+    font-size: 27px;
+    line-height: 36px;
+}
+
+
+/* lg 경영이념 */
+#LGWayManage>div{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#LGWayManage>div>p{
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 4px 10px;
+    text-align: center;
+}
+#LGWayManage>div>p>span{
+    display: block;
+    border-radius: 50%;
+    border: 1px solid #af0043;
+    line-height: 460px;
+    font-size: 45px;
+}
+#cross{
+    background: #af0043;
+    height: 48px;
+    position: relative;
+    width: 14px;
+}
+#cross:after{
+    background: #af0043;
+    content: "";
+    height: 14px;
+    left: -17px;
+    position: absolute;
+    top: 17px;
+    width: 48px;
+}
+
+
+/* 모달창 */
+.LGWayModal{
+    width: 650px;
+    padding: 50px 50px 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+.LGWayModal>h4{
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: bold;
+}
+.LGWayModal>ul{
+    width: 450px;
+}
+.LGWayModal>ul li{
+    margin-bottom: 35px;
+}
+.LGWayModal>ul li>dl>dt{
+    margin-bottom: 18px;
+    font-size: 27px;
+    font-weight: bold;
+    color: #af0043;
+}
+.LGWayModal>ul li>dl>dd{
+    color: #656565;
+    line-height: 27px;
+}
+.LGWayModal>p{
+    width: 120px;
+    margin: 0 auto;
+    background-color: #af0043;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 30px 30px;
+}
+#modalBG{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0; top: 0;
+}

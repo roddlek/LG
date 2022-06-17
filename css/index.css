@@ -1,0 +1,222 @@
+@charset "utf8";
+
+/* 공통 css */
+#lgBaro>div, #video>div{
+    width: 75.789473684210526%;
+    /* width: 1440px; */
+    margin: 0 auto;
+}
+
+
+
+/* main */
+article{
+    margin-bottom: 100px;
+    clear: both;
+}
+article h3{
+    font-size: 63px;
+    font-weight: bold;
+    color: #af0043;
+    margin-bottom: 27px;
+}
+article>div>p{
+    font-size: 27px;
+    margin-bottom: 50px;
+}
+
+/* article-1 gallery */
+#gallery>div{
+    width: 100%;
+    /* width: 1900px; */
+    height: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+#gallery>div>ul{
+    width: 400%;
+    /* width: 7600px; */
+    height: 100%;
+}
+#gallery>div>ul>li{
+    width:25%;
+    height:100%;
+    background: url("/image/gallery1.jpg") no-repeat center;
+    background-size: cover;
+}
+#gallery>div>ul>li>a{
+    display:block;
+    width: 75.789473684210526%;
+    /* width: 1440px; */
+    position: absolute;
+    left: 50%; top: 290px;
+    transform: translateX(-50%);
+    color: #fff;
+}
+#gallery>div>ul>li>a p:first-child{
+    margin-bottom: 27px;
+    font-size: 63px;
+    font-weight: bold;
+    line-height: 83px;
+}
+.galleryPaging{
+    width: 500px;
+    font-size: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.galleryPaging>span:first-child{
+    width: 220px;
+    margin-right: 20px;
+    border-bottom: 1px solid #fff;
+}
+.galleryPaging>span:nth-child(2){
+    margin-right: 10px;
+}
+
+#gallery>div>ul>li:nth-child(2){
+    background-image: url("/image/media/main_media2.png");
+}
+#gallery>div>ul>li:nth-child(3){
+    background-image: url("/image/media/main_media3.jpg");
+}
+#gallery>div>ul>li:nth-child(4){
+    background-image: url("/image/lg/main_lg3.jpg");
+}
+
+#slideBtn{
+    position: absolute;
+    left: 50%; bottom: 0;
+    transform: translateX(-50%);
+}
+#slideBtn a{
+    width: 16px;
+    height: 16px;
+    margin: 0 18px;
+    display: inline-block;
+    text-indent: -99999px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+}
+#slideBtn a:first-child{
+    width: 50px;
+    border-radius: 15px 15px;
+}
+
+
+/* article-2 baro */
+#lgBaro>div>div>ul{
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+}
+#lgBaro>div>div>ul li{
+    width: 32.5%;
+    /* width: 468px; */
+    height: 100%;
+    border: solid 1px #dedede;
+    box-sizing: border-box;
+}
+#lgBaro>div>div>ul li figure img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+#lgBaro>div>div>ul li figure>figcaption{
+    padding: 30px;
+}
+#lgBaro>div>div>ul li figure>figcaption>a>dl>dt{
+    margin-bottom: 30px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+}
+#lgBaro>div>div>ul li figure>figcaption>a>dl>dt>i{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+#lgBaro>div>div>ul li figure>figcaption>a>dl>dt>i>img{
+    height: 36px;
+    object-fit: contain;
+}
+#lgBaro>div>div>ul li figure>figcaption>a>dl>dd{
+    font-size: 27px;
+    line-height: 45px;
+}
+
+
+/* article-3 publicContribute */
+#publicContribute{
+    width: 100%;
+    padding: 100px 0;
+    background-color: #f1f1f1;
+}
+#publicContributeTitle{
+    width: 75.789473684210526%;
+    margin: 0 auto;
+}
+#publicContributeBox{
+    width: 100%;
+    overflow: hidden;
+}
+#publicContributeBox>div{
+    width: 139.473684210526316%;
+    /* width: 2650px; */
+    display: flex;
+    justify-content: space-between;
+}
+#publicContributeBox>div figure{
+    width: 19.245283018867925%;
+    /* width: 510px; */
+    border: 1px solid #dedede;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+#publicContributeBox>div figure>img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+#publicContributeBox>div figure>figcaption{
+    padding: 30px;
+}
+#publicContributeBox>div figure>figcaption>dl{
+    font-size: 27px;
+}
+#publicContributeBox>div figure>figcaption>dl>dt{
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+#publicContributeBox>div figure>figcaption>dl>dd{
+    margin-bottom: 50px;
+}
+#publicContributeBox>div figure>figcaption span{
+    margin-right: 10px;
+    color: #af0043;
+}
+
+
+/* article-4 video */
+#video{
+    text-align: center;
+}
+#video video{
+    /* width: 72%; */
+    width: 1040px;
+    margin-bottom: 50px;
+}
+.button{
+    width: 194px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 70px;
+    background-color: #af0043;
+    color: #fff;
+    border-radius: 100px;
+}
+.button a{
+    display: block;
+}

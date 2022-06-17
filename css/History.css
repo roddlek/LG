@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+#History>header{
+    width: 100%;
+    height: 800px;
+    margin-bottom: 50px;
+    background: url("/image/lg/main_lg3.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+/* 탭메뉴 버튼 */
+.tabBtn{
+    width: 76.421052631578947%;
+    /* width: 1452px; */
+    margin: 0 auto 100px;
+    overflow: hidden;
+}
+.tabBtn>ul{
+    width: 790px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.tabBtn>ul>li{
+    padding: 0 30px;
+    text-align: center;
+    line-height: 45px;
+    color: #656565;
+    border-radius: 25px 25px;
+    background-color: #f1f1f1;
+}
+
+/* 연혁 페이징 버튼 */
+#History>section:nth-child(3)>ol{
+    width: 1440px;
+    margin: 0 auto 50px;
+}
+#History>section:nth-child(3)>ol li{
+    font-size: 14px;
+    font-weight: bold;
+    color: #af0046;
+    float: left;
+}
+#History>section:nth-child(3)>ol li::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #af0046;
+}
+
+
+/* 연혁 공통 */
+#tab1, #tab2, #tab3{
+    width: 100%;
+}
+section>h4, section h4 + p{
+    width: 1440px;
+    margin: 0 auto;
+}
+section>h4{
+    margin-bottom: 27px;
+}
+section h4 + p{
+    margin-bottom: 50px;
+}
+section>div>ol{
+    width: 5990px;
+    height: 720px;
+    padding: 50px 100px 0 230px;
+    box-sizing: border-box;
+    background: url("/image/lg/history_bg.png") repeat-x left center;
+    overflow: hidden;
+}
+section>div>ol li{
+    float: left;
+    /* position: relative; */
+}
+section>div>ol li>dl{
+    padding-left: 18px;
+    border-left: 1px solid #af0046;
+}
+section>div>ol li>dl>dt{
+    margin-bottom: 27px;
+    font-size: 27px;
+    font-weight: bold;
+    color: #af0046;
+}
+/* up */
+.up_H{
+    width: 470px;
+    height: 100%;
+    position: relative;
+}
+.up_H dl{
+    position: absolute;
+    left: 0; top: 0;
+}
+.up_H dl>dd{
+    padding-bottom: 12px;
+}
+.up_H dl>dd:last-child{
+    padding-bottom: 30px;
+}
+/* down */
+.down_H{
+    padding-top: 310px;
+}
+.down_H dl>dt{
+    padding-top: 30px;
+}
+.down_H dl>dd{
+    padding-bottom: 12px;
+}
+.down_H dl>dd:last-child{
+    padding-bottom: 1px;
+}
+
+
+
+section>div>ol li>dl>dd>img{
+    width: 220px;
+}
+section>div>ol li>dl>dd>img:first-child{
+    margin-right: 10px;
+}

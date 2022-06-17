@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+#CI>header{
+    width: 100%;
+    height: 800px;
+    margin-bottom: 100px;
+    background: url("/image/lg/main_lg2.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+
+/*  */
+#CI>section{
+    width: 1440px;
+}
+
+
+/* ci 소개 */
+#CIAbout{
+    margin: 0 auto 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#CIAbout>div{
+    width: 710px;
+}
+#CIAbout>div>p{
+    width: 100%;
+}
+#CIAbout>div>h4{
+    line-height: 83px;
+    float: left;
+}
+#CIAbout>img{
+    width: 710px;
+    object-fit: cover;
+}
+
+
+/* ci 컬러 */
+#CIColor{
+    margin: 0 auto 130px;
+}
+#CIColor>p{
+    margin-bottom: 80px;
+}
+#CIColor>ul{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#CIColor>ul li{
+    width: 480px;
+    height: 480px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    outline: 30px solid #af0043;
+    position: relative;
+    background-color: #af0043;
+}
+#CIColor>ul li:last-child{
+    background-color: #656565;
+    outline: 30px solid #656565;
+}
+#CIColor>ul li>dl{
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+#CIColor>ul li>dl>dt{
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+#CIColor>ul li>dl>dd{
+    font-size: 27px;
+    font-weight: 300;
+    line-height: 45px;
+}

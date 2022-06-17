@@ -1,0 +1,667 @@
+@charset "utf-8";
+
+
+@media screen and (max-width:1600px) and (min-width:1309px){
+    /* 바로가기 섹션 */
+    #lgBaro>div>div>ul li figure>figcaption{
+        padding: 24px;
+    }
+    #lgBaro>div>div>ul li figure>figcaption>a>dl>dt{
+        margin-bottom: 18px;
+        font-size: 27px;
+    }
+    #lgBaro>div>div>ul li figure>figcaption>a>dl>dt>i>img{
+        height: 27px;
+    }
+    #lgBaro>div>div>ul li figure>figcaption>a>dl>dd{
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:1310px) and (min-width:1159px){
+    /************* 공통범위 *************/
+    .subNav ul li{
+        width: 200px;
+        margin-left: 18px;
+    }
+
+    /* 바로가기 섹션 */
+    #lgBaro>div>div>ul li figure>figcaption{
+        padding: 24px;
+    }
+    #lgBaro>div>div>ul li figure>figcaption>a>dl>dt{
+        margin-bottom: 18px;
+        font-size: 27px;
+    }
+    #lgBaro>div>div>ul li figure>figcaption>a>dl>dt>i>img{
+        height: 27px;
+    }
+    #lgBaro>div>div>ul li figure>figcaption>a>dl>dd{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    /* 사회공헌 섹션 */
+    #publicContributeBox>div{
+        width: 2480px;
+    }
+    #publicContributeBox>div figure{
+        width: 480px;
+    }
+    #publicContributeBox>div figure>figcaption{
+        padding: 24px;
+    }
+    /* 동영상 섹션 */
+    #video video{
+        width: 90%;
+    }
+    /************* 공통범위 *************/
+    .footerMenu>ul>li{
+        margin-right: 115px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:1160px) and (min-width:979px){
+    /************* 공통범위 *************/
+    .subNav ul li{
+        width: 180px;
+        margin-left: 18px;
+    }
+    .subNav ul li a figure img{
+        height: 120px;
+    }
+
+    /*  */
+    header>div, .subNav>div, #lgBaro>div, #publicContributeTitle, #video>div, footer>div{
+        width: 94vw;
+    }
+
+    /* 바로가기 섹션 */
+    #lgBaro>div>div>ul li figure img{
+        height: 240px;
+    }
+    #lgBaro>div>div>ul li figure>figcaption{
+        padding: 18px;
+    }
+    #lgBaro>div>div>ul li figure>figcaption>a>dl>dt{
+        margin-bottom: 18px;
+        font-size: 27px;
+    }
+    #lgBaro>div>div>ul li figure>figcaption>a>dl>dt>i>img{
+        height: 27px;
+    }
+    #lgBaro>div>div>ul li figure>figcaption>a>dl>dd{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    /* 사회공헌 섹션 */
+    #publicContributeBox>div{
+        width: 2480px;
+    }
+    #publicContributeBox>div figure{
+        width: 480px;
+    }
+    #publicContributeBox>div figure>figcaption{
+        padding: 24px;
+    }
+    /* 동영상 섹션 */
+    #video video{
+        width: 90%;
+    }
+    #video>div>p{
+        width: 80%;
+        line-height: 45px;
+        margin: 0 auto 50px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:980px) and (min-width:579px){
+    /************* 공통범위 *************/
+    /* header */
+    h1{
+        float: none;
+    }
+    header>div{
+        width: 100vw;
+        padding: 10px 2vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+    }
+    header nav{
+        width: 560px;
+        height: 100vh;
+        padding: 80px 80px 50px 50px;
+        box-sizing: border-box;
+        float: none;
+        z-index: 100;
+        position: absolute;
+        right: 0; top: 0;
+        background-color: #af0046;
+    }
+    header nav>ul li{
+        width: auto;
+        line-height: 40px;
+        text-align: left;
+        float: none;
+        position: static;
+        font-size: 27px;
+        font-weight: bold;
+        line-height: 80px;
+    }
+    /* 서브 네비게이션 아이콘 정리 */
+    .subList{
+        width: 100%;
+        padding: 0 5px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #fff;
+    }
+    .subList>i{
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* sub navigation */
+    .subNav{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        position: static;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 0;
+    }
+    .subNav>div{
+        width: auto;
+        padding-top: 0;
+        margin: 0;
+        border-top: none;
+    }
+    .subNav ul{
+        float: none;
+    }
+    .subNav ul li{
+        width: 300px;
+        margin-left: 0;
+        text-align: left;
+        border-bottom: 1px solid #fff;
+        box-sizing: border-box;
+        font-size: 18px;
+        font-weight: normal;
+    }
+    .subNav ul li:last-child{
+        border-bottom: none;
+    }
+    .subNav ul li a figure img{
+        height: 0;
+        display: none;
+    }
+    .subNav ul li a figure figcaption{
+        line-height: 80px;
+        text-indent: 18px;
+        display: block;
+        align-items: none;
+    }
+    .subNav ul li a figure figcaption span{
+        display: none;
+        width: 0;
+        margin-right: 0;
+        border-bottom: none;
+    }
+    /* 기타 */
+    #suNavBG{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        left: 0; top: 0;
+    }
+    .closeBtn{
+        display: block;
+        position: absolute;
+        right: 30px; top: 30px;
+    }
+    .closeBtn>i{
+        display: block;
+        width: 32px;
+        height: 32px;
+        background: url("/image/close_btn.png") no-repeat center;
+    }
+    .mobileBtn{
+        display: block;
+    }
+
+    /* 타이틀 폰트 */
+    #lgBaro>div>h3, #publicContributeTitle>h3, #video>div>h3{
+        font-size: 45px;
+    }
+
+    /* 메인 갤러리 */
+    #gallery>div>ul>li>a{
+        width: 94vw;
+        position: absolute;
+        left: 50%; top: 321.5px;
+    }
+    #gallery>div>ul>li>a p:first-child{
+        font-size: 36px;
+        line-height: 56px;
+    }
+    .galleryPaging{
+        width: 340px;
+        font-size: 18px;
+    }
+    .galleryPaging>span:first-child{
+        width: 150px;
+        margin-right: 10px;
+    }
+    .galleryPaging>span:nth-child(2){
+        margin-right: 6px;
+    }
+    /* lg바로가기 */
+    #lgBaro{
+        overflow: hidden;
+    }
+    #lgBaro>div{
+        width: 100%;
+        padding-left: 4vw;
+        box-sizing: border-box;
+    }
+    #lgBaro>div>div{
+        width: 96vw;
+        float: right;
+        overflow: hidden;
+    }
+    #lgBaro>div>div>ul{
+        width: 1240px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #lgBaro>div>div>ul li{
+        width: 400px;
+    }
+    /* lg 사회공헌 */
+    #publicContribute{
+        overflow: hidden;
+    }
+    #publicContributeTitle{
+        width: 100%;
+        padding-left: 4vw;
+        box-sizing: border-box;
+    }
+    #publicContributeTitle>p{
+        line-height: 45px;
+    }
+    #publicContributeBox{
+        width: 96vw;
+        float: right;
+        overflow: hidden;
+    }
+    #publicContributeBox>div{
+        width: 2480px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #publicContributeBox>div figure{
+        width: 480px;
+    }
+    #publicContributeBox>div figure>img{
+        height: 240px;
+    }
+    /* lg 동영상 */
+    #video video{
+        width: 100%;
+    }
+    #video>div{
+        width: 100vw;
+    }
+    #video>div>p{
+        width: 80%;
+        line-height: 45px;
+        margin: 0 auto 50px;
+    }
+
+    /************* 공통범위 *************/
+    /* aside */
+    aside{
+        position: fixed;
+        right: 20px; bottom: 20px;
+    }
+    aside p{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    aside p>a{
+        margin-top: 0;
+    }
+    aside p>a>img{
+        width: 12px;
+    }
+    /* footer */
+    footer{
+        clear: both;
+        width: 100vw;
+        padding: 50px 0;
+    }
+    footer>div{
+        width: 90vw;
+    }
+    footer>div>h1{
+        display: none;
+    }
+    .footerMenu{
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 0;
+        float: none;
+    }
+    .footerMenu>ul{
+        overflow: auto;
+    }
+    .footerMenu>ul>li{
+        margin: 0 0 50px 0;
+        float: none;
+        display: flex;
+        align-items: center;
+    }
+    .footerMenu>ul>li>a{
+        width: 100px;
+        margin: 0 50px 0 0;
+    }
+    .footerMenu>ul>li ul li{
+        display: inline-block;
+        margin: 0 20px 0 0;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:580px) and (min-width:300px){
+    /************* 공통범위 *************/
+    article{
+        margin-bottom: 50px;
+    }
+    /* header */
+    h1{
+        float: none;
+    }
+    header>div{
+        width: 100vw;
+        padding: 10px 2vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+    }
+    header nav{
+        /* width: 560px; */
+        width: 100%;
+        height: 100vh;
+        padding: 80px 80px 50px 50px;
+        box-sizing: border-box;
+        float: none;
+        z-index: 100;
+        position: absolute;
+        right: 0; top: 0;
+        background-color: #af0046;
+    }
+    header nav>ul li{
+        width: auto;
+        line-height: 40px;
+        text-align: left;
+        float: none;
+        position: static;
+        font-size: 27px;
+        font-weight: bold;
+        line-height: 80px;
+    }
+    /* 서브 네비게이션 아이콘 정리 */
+    .subList{
+        width: 100%;
+        padding: 0 5px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #fff;
+    }
+    .subList>i{
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* sub navigation */
+    .subNav{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        position: static;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 0;
+    }
+    .subNav>div{
+        width: auto;
+        padding-top: 0;
+        margin: 0;
+        border-top: none;
+    }
+    .subNav ul{
+        float: none;
+    }
+    .subNav ul li{
+        width: 300px;
+        margin-left: 0;
+        text-align: left;
+        border-bottom: 1px solid #fff;
+        box-sizing: border-box;
+        font-size: 18px;
+        font-weight: normal;
+    }
+    .subNav ul li:last-child{
+        border-bottom: none;
+    }
+    .subNav ul li a figure img{
+        height: 0;
+        display: none;
+    }
+    .subNav ul li a figure figcaption{
+        line-height: 80px;
+        text-indent: 18px;
+        display: block;
+        align-items: none;
+    }
+    .subNav ul li a figure figcaption span{
+        display: none;
+        width: 0;
+        margin-right: 0;
+        border-bottom: none;
+    }
+    /* 기타 */
+    #suNavBG{
+        display: none;
+        width: 0;
+        height: 0;
+        background-color: rgba(0, 0, 0, 0);
+        position: static;
+    }
+    .closeBtn{
+        display: block;
+        position: absolute;
+        right: 30px; top: 30px;
+    }
+    .closeBtn>i{
+        display: block;
+        width: 32px;
+        height: 32px;
+        background: url("/image/close_btn.png") no-repeat center;
+    }
+    .mobileBtn{
+        display: block;
+    }
+
+    /* 타이틀 폰트 */
+    #lgBaro>div>h3, #publicContributeTitle>h3, #video>div>h3{
+        font-size: 45px;
+    }
+
+    /* 메인 갤러리 */
+    #gallery>div>ul>li>a{
+        width: 94vw;
+        position: absolute;
+        left: 50%; top: 321.5px;
+    }
+    #gallery>div>ul>li>a p:first-child{
+        font-size: 36px;
+        line-height: 56px;
+    }
+    .galleryPaging{
+        width: 340px;
+        font-size: 18px;
+    }
+    .galleryPaging>span:first-child{
+        width: 150px;
+        margin-right: 10px;
+    }
+    .galleryPaging>span:nth-child(2){
+        margin-right: 6px;
+    }
+
+    /* lg바로가기 */
+    #lgBaro{
+        overflow: hidden;
+    }
+    #lgBaro>div{
+        width: 88vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #lgBaro>div>div{
+        width: 100%;
+    }
+    #lgBaro>div>div>ul{
+        width: 100%;
+        display: block;
+    }
+    #lgBaro>div>div>ul li{
+        width: 100%;
+        margin-bottom: 45px;
+        text-align: left;
+        border: none;
+    }
+    #lgBaro>div>div>ul li:last-child{
+        margin-bottom: 0;
+    }
+    #lgBaro>div>div>ul li figure>figcaption{
+        padding: 34px 5px 0;
+    }
+    #lgBaro>div>div>ul li figure>figcaption>a>dl>dt{
+        font-weight: 600;
+    }
+
+    /* lg 사회공헌 */
+    #publicContribute{
+        padding: 50px 0;
+        overflow: hidden;
+    }
+    #publicContributeTitle{
+        width: 100%;
+        margin: 0 0 27px;
+        text-align: center;
+    }
+    #publicContributeTitle>p{
+        width: 80%;
+        margin: 0 auto;
+        line-height: 45px;
+    }
+    #publicContributeBox{
+        width: 94vw;
+        float: right;
+        overflow: hidden;
+    }
+    #publicContributeBox>div{
+        width: 1822px;
+    }
+    #publicContributeBox>div figure{
+        width: 350px;
+    }
+    #publicContributeBox>div figure>img{
+        height: 240px;
+    }
+    #publicContributeBox>div figure>figcaption{
+        padding: 27px;
+    }
+    #publicContributeBox>div figure>figcaption>dl>dt{
+        margin-bottom: 27px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    #publicContributeBox>div figure>figcaption>dl>dd{
+        font-size: 18px;
+    }
+    #publicContributeBox>div figure>figcaption span{
+        font-size: 14px;
+    }
+    /* lg 동영상 */
+    #video video{
+        width: 100%;
+    }
+    #video>div{
+        width: 100vw;
+    }
+    #video>div>p{
+        width: 80%;
+        line-height: 45px;
+        margin: 0 auto 50px;
+    }
+
+    /************* 공통범위 *************/
+    /* aside */
+    aside{
+        position: fixed;
+        right: 20px; bottom: 20px;
+    }
+    aside p{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    aside p>a{
+        margin-top: 0;
+    }
+    aside p>a>img{
+        width: 12px;
+    }
+    /* footer */
+    footer{
+        padding: 0;
+        background-color: #656565;
+        background-image: none;
+    }
+    footer>div{
+        display: none;
+    }
+    footer small{
+        line-height: 60px;
+    }
+}

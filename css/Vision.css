@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+#Vision>header{
+    width: 100%;
+    height: 800px;
+    margin-bottom: 100px;
+    background: url("/image/csr/main_csr1.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+#Vision>section{
+    width: 75.789473684210526%;
+    /* width: 1440px; */
+    margin: 0 auto 100px;
+}
+#Vision>section:nth-child(2){
+    text-align: center;
+}
+#Vision>section:nth-child(2)>ul{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    text-align: left;
+}
+#Vision>section:nth-child(2)>ul li{
+    width: 44%;
+}
+#Vision>section:nth-child(2)>ul li>dl>dt{
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 27px;
+    color: #af0043;
+}
+#Vision>section:nth-child(2)>ul li>dl>dd{
+    font-size: 27px;
+    line-height: 45px;
+}
+#Vision>section:nth-child(2)>img{
+    padding-right: 109px; /* 왼쪽 텍스트 부분 */
+    margin: 0 auto;
+}
+
+
+/*  */
+#Vision>section:nth-child(3)>dl{
+    margin-bottom: 50px;
+}
+#Vision>section:nth-child(3)>dl>dt{
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 27px;
+    color: #af0043;
+}
+#Vision>section:nth-child(3)>dl>dd{
+    width: 610px;
+    font-size: 27px;
+    line-height: 45px;
+}
+#Vision>section:nth-child(3)>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#Vision>section:nth-child(3)>ul li{
+    width: 450px;
+    padding: 210.5px 0 110.5px;
+    text-align: center;
+    font-size: 45px;
+    color: #af0043;
+    background: url("/image/csr/csr1.png") no-repeat center;
+}
+#Vision>section:nth-child(3)>ul li>dl{
+    color: #ffff;
+    text-align: center;
+}
+#Vision>section:nth-child(3)>ul li>dl>dt{
+    margin-bottom: 18px;
+    font-size: 27px;
+    font-weight: bold;
+    position: relative;
+}
+#Vision>section:nth-child(3)>ul li>dl>dt>span{
+    font-size: 63px;
+    font-weight: normal;
+    color: #af0043;
+    position: absolute;
+    left: 50%; top: -100px;
+    transform: translateX(-50%);
+}
+#Vision>section:nth-child(3)>ul li>dl>dd{
+    width: 230px;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 auto;
+}
+#Vision>section:nth-child(3)>ul li:nth-child(2){
+    background-image: url("/image/csr/csr2.png");
+}
+#Vision>section:nth-child(3)>ul li:nth-child(3){
+    background-image: url("/image/csr/csr3.png");
+}

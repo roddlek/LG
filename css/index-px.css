@@ -1,0 +1,414 @@
+@charset "utf8";
+
+/* 공통 css */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    font-family: "Pretendard", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #121212;
+    position: relative;
+}
+.hidden{
+    width: 0; height: 0;
+    line-height: 0;
+    position: absolute;
+    visibility: hidden;
+}
+.divWrap{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* header */
+header{
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+}
+h1>a>img{
+    height: 32px;
+}
+header nav{
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav>ul li{
+    width: 122px;
+    line-height: 60px;
+    text-align: right;
+    float: left;
+}
+header nav>ul li a{
+    display: block;
+    color: #fff;
+}
+/* nav button */
+
+/* sub navigation */
+.subNav{
+    width: 1900px;
+    padding: 60px 0 27px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0; top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.subNav>div{
+    padding-top: 30px;
+    border-top: 1px solid #9a9a9a;
+}
+.subNav ul{
+    float: right;
+}
+.subNav ul li{
+    width: 220px;
+    margin-left: 27px;
+    text-align: left;
+}
+.subNav ul li a{
+    display: block;
+}
+.subNav ul li a figure img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+.subNav ul li a figure figcaption{
+    line-height: normal;
+    display: flex;
+    align-items: center;
+}
+.subNav ul li a figure figcaption span{
+    display: block;
+    width: 30px;
+    margin-right: 10px;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+}
+
+
+/* main */
+article{
+    margin-bottom: 100px;
+    clear: both;
+}
+article h2{
+    font-size: 63px;
+    font-weight: bold;
+    color: #af0043;
+    margin-bottom: 27px;
+}
+article>div>p{
+    font-size: 27px;
+    margin-bottom: 50px;
+}
+
+/* article-1 gallery */
+#gallery{
+    position: relative;
+}
+#mainGallery{
+    width: 1900px;
+    height: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#mainGallery>div{
+    width: 7600px;
+    height: 100%;
+}
+.mainGalleryBG{
+    width: 1900px;
+    height: 100%;
+    /* display: inline-block; */
+    float: left;
+    background-color: #af0043;
+    background: url("/image/gallery1.jpg") no-repeat center;
+    background-size: cover;
+}
+.mainGalleryBG:nth-child(2){
+    background-image: url("/image/media/main_media2.jpg");
+}
+.mainGalleryBG:nth-child(3){
+    background-image: url("/image/media/main_media3.jpg");
+}
+.mainGalleryBG:nth-child(4){
+    background-image: url("/image/lg/main_lg3.jpg");
+}
+.mainGalleryTextBox{
+    width: 1440px;
+    height: 100%;
+    position: absolute;
+    left: 50%; top: 0;
+    transform: translateX(-50%);
+}
+.mainGalleryText{
+    transform: translateY(288px);
+    color: #fff;
+}
+.mainGalleryText>p{
+    margin-bottom: 27px;
+    font-size: 63px;
+    font-weight: bold;
+    line-height: 83px;
+}
+.mainGalleryText>div{
+    width: 498px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainGalleryText>div>span{
+    display: inline-block;
+    width: 223px;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+}
+.mainGalleryText>div>p{
+    font-size: 27px;
+}
+.pagingNum{
+    width: 38px;
+    display: flex;
+    justify-content: space-between;
+}
+.pagingNum span:first-child{
+    font-weight: bold;
+}
+#slideBtn{
+    position: absolute;
+    left: 50%; bottom: 30px;
+    transform: translateX(-50%);
+}
+#slideBtn a{
+    width: 16px;
+    height: 16px;
+    margin: 0 18px;
+    display: inline-block;
+    text-indent: -99999px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+}
+
+
+/* article-2 baro */
+#cardNews{
+    width: 100%;
+}
+#cardNews ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#cardNews ul li{
+    width: 467px;
+    height: 100%;
+    border: solid 1px #dedede;
+    box-sizing: border-box;
+    display: inline-block;
+}
+#cardNews ul li:hover{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 4px 10px;
+}
+#cardNews ul li figure{
+    width: 100%;
+}
+#cardNews ul li figure img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+#cardNews ul li figure>figcaption{
+    padding: 30px;
+}
+#cardNews ul li figure>figcaption>a>dl>dt{
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+#cardNews ul li figure>figcaption>a>dl>dd{
+    font-size: 27px;
+    line-height: 37px;
+}
+
+
+/* article-3 publicContribute */
+#publicContribute{
+    width: 100%;
+    padding: 100px 0;
+    background-color: #f1f1f1;
+}
+#publicContributeBox{
+    width: 100%;
+    overflow: hidden;
+}
+#publicContributeBox>div{
+    width: 2650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#publicContributeBox>div figure{
+    width: 510px;
+    border: 1px solid #dedede;
+    box-sizing: border-box;
+    background-color: #fff;
+    float: left;
+}
+#publicContributeBox>div figure>img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+#publicContributeBox>div figure>figcaption{
+    padding: 30px;
+}
+#publicContributeBox>div figure>figcaption>dl{
+    font-size: 27px;
+}
+#publicContributeBox>div figure>figcaption>dl>dt{
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+#publicContributeBox>div figure>figcaption>dl>dd{
+    margin-bottom: 50px;
+}
+#publicContributeBox>div figure>figcaption span{
+    margin-right: 10px;
+    color: #af0043;
+}
+
+
+/* article-4 video */
+#video{
+    text-align: center;
+}
+#video video{
+    width: 1040px;
+    margin-bottom: 50px;
+}
+.button{
+    width: 194px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 70px;
+    background-color: #af0043;
+    color: #fff;
+    border-radius: 100px;
+}
+.button a{
+    display: block;
+}
+
+
+/* aside top btton */
+aside{
+    position: fixed;
+    right: 27px; bottom: 27px;
+}
+aside p{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #af0043;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #fff4f6;
+    text-align: center;
+    line-height: 50px;
+}
+aside p>a{
+    display: block;
+    margin-top: 2px;
+}
+
+
+/* footer */
+footer{
+    clear: both;
+    padding: 100px 0 70px;
+    color: #fff;
+    background: url("/image/footer.jpg") no-repeat center -500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    overflow: hidden;
+}
+.footerWrap{
+    width: 100%;
+}
+.footerWrap h1{
+    float: left;
+}
+.footerMenu{
+    width: 1084px;
+    float: right;
+}
+.footerMenu>ul{
+    overflow: hidden;
+}
+.footerMenu>ul>li{
+    margin-right: 120px;
+    float: left;
+}
+.footerMenu>ul>li>a{
+    display: block;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.footerMenu>ul>li>a ul{}
+.footerMenu>ul>li ul li{
+    margin-bottom: 30px;
+}
+.siteBtn{
+    width: 300px;
+    padding: 0 30px;
+    border: 1px solid #656565;
+    border-radius: 8px;
+    box-sizing: border-box;
+    line-height: 50px;
+    background-color: #fff;
+}
+#siteBtn{
+    float: right;
+    position: relative;
+}
+#siteBtn button{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#siteBtn button span{
+    font-size: 14px;
+    line-height: 50px;
+}
+#siteBtn ul{
+    padding: 0 15px;
+    background-color: #fff;
+    position: absolute;
+    left: 0; top: -158px;
+}
+#siteBtn ul li{
+    font-size: 14px;
+    text-indent: 15px;
+    border-bottom: 1px solid #d9d9d9;
+}
+#siteBtn ul li a{
+    display: block;
+    color: #121212;
+}
+footer small{
+    clear: both;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+}

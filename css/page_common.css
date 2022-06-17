@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+img{
+    max-width: 100%;
+}
+/* 메인 이미지 */
+main>article>header>h3{
+    margin-bottom: 0;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 63px;
+    text-align: center;
+}
+main>article>header>h3>span{
+    display: inline-block;
+    color: #fff;
+    line-height: 120px;
+}
+main>article>header>h3>span:first-child{
+    border-bottom: 5px solid #af0043;
+}
+main>article>header>h3>span:last-child{
+    width: 1200px;
+    font-weight: normal;
+}
+
+section{
+    margin-bottom: 100px;
+}
+section h4{
+    font-size: 63px;
+    color: #af0043;
+    font-weight: bold;
+    margin-bottom: 27px;
+}
+section h4 + p{
+    width: 50%;
+    font-size: 27px;
+    line-height: 45px;
+    margin-bottom: 50px;
+}
+
+/* scroll button */
+.srollBtn>ul{
+    width: 396px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.srollBtn>ul>li{
+    float: left;
+    width: 120px;
+    margin-right: 18px;
+    text-align: center;
+    line-height: 45px;
+    color: #656565;
+    border-radius: 25px 25px;
+    background-color: #f1f1f1;
+}
+.srollBtn>ul>li:last-child{
+    margin-right: 0;
+}
+.srollBtn>ul>li a{
+    display: block;
+}
+.clicked{
+    border: 1px solid #af0043!important;
+    box-sizing: border-box;
+    color: #af0043!important;
+    background-color: #fff4f6!important;
+}
+
+/* 필터 버튼 */
+.filterBtn{
+    width: 76.210526315789474%;
+    /* width: 1448px; */
+    margin: 0 auto 50px;
+    overflow: hidden;
+}
+.filterBtn>ul{
+    overflow: hidden;
+}
+.filterBtn>ul>li{
+    float: left;
+    padding: 0 30px;
+    margin-right: 18px;
+    text-align: center;
+    line-height: 45px;
+    color: #656565;
+    border-radius: 25px 25px;
+    background-color: #f1f1f1;
+}
+
+/* 더보기 버튼 */
+.moreBtn{
+    width: 120px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    border-radius: 60px 60px;
+    background-color: #af0043;
+}

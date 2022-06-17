@@ -1,0 +1,228 @@
+/* 공통 */
+body{
+    font-family: "Pretendard", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #121212;
+    /* position: relative; */
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    max-width: 100%;
+}
+.hidden{
+    width: 0; height: 0;
+    line-height: 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+
+
+/* header */
+header>div, .subNav>div, footer>div{
+    width: 75.789473684210526%;
+    /* width: 1440px; */
+    margin: 0 auto;
+}
+#divWrap>header{
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+}
+h1{
+    float: left;
+}
+h1>a{
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+}
+h1>a>img{
+    padding-top: 3px;
+    height: 32px;
+}
+header>div{
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+header nav{
+    height: 100%;
+    float: right;
+}
+header nav>ul{
+    overflow: hidden;
+}
+header nav>ul li{
+    width: 90px;
+    line-height: 40px;
+    text-align: right;
+    float: left;
+}
+header nav>ul li a{
+    display: block;
+    color: #fff;
+}
+
+/* sub navigation */
+.subNav{
+    width: 100%;
+    /* width: 1900px; */
+    padding: 60px 0 27px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0; top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.subNav>div{
+    padding-top: 30px;
+    border-top: 1px solid #9a9a9a;
+}
+.subNav ul{
+    float: right;
+}
+.subNav ul li{
+    width: 220px;
+    margin-left: 27px;
+    text-align: left;
+}
+.subNav ul li a{
+    display: block;
+}
+.subNav ul li a figure img{
+    height: 170px;
+    object-fit: cover;
+}
+.subNav ul li a figure figcaption{
+    line-height: normal;
+    display: flex;
+    align-items: center;
+}
+.subNav ul li a figure figcaption span{
+    display: block;
+    width: 30px;
+    margin-right: 10px;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+}
+.subList>i{
+    display: none;
+}
+.closeBtn{
+    display: none;
+}
+.mobileBtn{
+    display: none;
+}
+
+
+
+/* aside top btton */
+aside{
+    position: fixed;
+    right: 27px; bottom: 27px;
+}
+aside p{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #af0043;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #fff4f6;
+    text-align: center;
+    line-height: 50px;
+}
+aside p>a{
+    display: block;
+    margin-top: 2px;
+}
+
+
+
+/* footer */
+footer{
+    clear: both;
+    padding: 100px 0 70px;
+    color: #fff;
+    background: url("/image/footer.png") no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+footer>div{
+    overflow: hidden;
+}
+footer>div>h1{
+    float: left;
+}
+.footerMenu{
+    width: 75.277777777777778%;
+    float: right;
+    padding-top: 9px;
+}
+.footerMenu>ul{
+    overflow: hidden;
+}
+.footerMenu>ul>li{
+    margin-right: 120px;
+    float: left;
+}
+.footerMenu>ul>li:last-child{
+    margin-right: 0;
+}
+.footerMenu>ul>li>a{
+    display: block;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.footerMenu>ul>li ul li{
+    margin-bottom: 30px;
+}
+.siteBtn{
+    width: 300px;
+    padding: 0 30px;
+    border: 1px solid #656565;
+    border-radius: 8px;
+    box-sizing: border-box;
+    line-height: 50px;
+    background-color: #fff;
+}
+#siteBtn{
+    float: right;
+    position: relative;
+}
+#siteBtn button{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#siteBtn button span{
+    font-size: 14px;
+    line-height: 50px;
+}
+#siteBtn ul{
+    padding: 0 15px;
+    background-color: #fff;
+    position: absolute;
+    left: 0; top: -158px;
+}
+#siteBtn ul li{
+    font-size: 14px;
+    text-indent: 15px;
+    border-bottom: 1px solid #d9d9d9;
+}
+#siteBtn ul li a{
+    display: block;
+    color: #121212;
+}
+footer small{
+    clear: both;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+}

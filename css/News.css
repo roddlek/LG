@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+#News>header{
+    width: 100%;
+    height: 800px;
+    background: url("/image/media/main_media2.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* 보도자료 검색바 */
+#searchBar{
+    width: 100%;
+    margin-bottom: 50px;
+    background-color: #af0043;
+}
+#searchBar>div{
+    width: 1440px;
+    padding: 10px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#searchBar>div>div>select{
+    float: left;
+    width: 260px;
+    height: 45px;
+    margin-right: 27px;
+}
+#searchBar>div>div>input{
+    float: left;
+    padding: 0 9px;
+    margin-right: 10px;
+    line-height: 45px;
+    border: none;
+}
+#searchBar>div>div>p{
+    float: right;
+    width: 45px;
+    height: 45px;
+    background-color: #fff4f6;
+}
+#searchBar>div>div>p>i{
+    display: block;
+    line-height: 45px;
+    text-indent: -99999px;
+    background: url("/image/reset.png") no-repeat center;
+}
+#searchBar>div>div:last-child>input{
+    width: 350px;
+}
+
+
+
+/* 보도자료 리스트 */
+#newsList{
+    width: 75.789473684210526%;
+    /* width: 1440px; */
+    margin: 0 auto 100px;
+}
+#newsList>p.newsNum{
+    width: 100%;
+    font-size: 18px;
+    text-indent: 9px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dedede;
+}
+#newsList>p>span{
+    color: #af0043;
+    font-weight: bold;
+}
+#newsList>ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+#newsList>ul li{
+    width: 48.611111111111111%;
+    /* width: 700px; */
+    margin-bottom: 40px;
+    border: 1px solid #dedede;
+    box-sizing: border-box;
+}
+#newsList>ul li>figure>img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+#newsList>ul li>figure>figcaption{
+    padding: 27px;
+}
+#newsList>ul li>figure>figcaption>dl>dt{
+    margin-bottom: 50px;
+    color: #af0043;
+}
+#newsList>ul li>figure>figcaption>dl>dd{
+    color: #656565;
+}
+#newsList>ul li>figure>figcaption>dl>dd:nth-child(2){
+    font-size: 27px;
+    margin-bottom: 27px;
+    color: #121212;
+}
+#newsList>ul li>figure>figcaption>dl>dd:nth-child(3){
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 27px;
+}
+.date>span{
+    color: #656565;
+}

@@ -32,21 +32,28 @@
 }
 
 /* 연혁 페이징 버튼 */
-#History>section:nth-child(3)>ol{
+.pagingBtn{
     width: 1440px;
     margin: 0 auto 50px;
+    overflow: hidden;
 }
-#History>section:nth-child(3)>ol li{
-    font-size: 14px;
-    font-weight: bold;
-    color: #af0046;
+.pagingBtn>ol{
+    float: right;
+}
+.pagingBtn>ol>li{
     float: left;
+    margin-left: 36px;
+    font-size: 16px;
+    color: #dedede;
 }
-#History>section:nth-child(3)>ol li::before{
-    content: "";
-    width: 12px;
-    height: 12px;
-    background-color: #af0046;
+.pagingBtn>ol>li:before{
+    display: block;
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin: 0 auto 16px;
+    background-color: #dedede;
 }
 
 
@@ -64,23 +71,23 @@ section>h4{
 section h4 + p{
     margin-bottom: 50px;
 }
-section>div>ol{
-    width: 5990px;
+section>div:last-child>ol{
+    width: 6800px;
     height: 720px;
     padding: 50px 100px 0 230px;
     box-sizing: border-box;
     background: url("/image/lg/history_bg.png") repeat-x left center;
     overflow: hidden;
 }
-section>div>ol li{
+section>div:last-child>ol li{
     float: left;
-    /* position: relative; */
+    position: relative;
 }
-section>div>ol li>dl{
+section>div:last-child>ol li>dl{
     padding-left: 18px;
     border-left: 1px solid #af0046;
 }
-section>div>ol li>dl>dt{
+section>div:last-child>ol li>dl>dt{
     margin-bottom: 27px;
     font-size: 27px;
     font-weight: bold;
@@ -94,7 +101,7 @@ section>div>ol li>dl>dt{
 }
 .up_H dl{
     position: absolute;
-    left: 0; top: 0;
+    left: 0; bottom: 360px;
 }
 .up_H dl>dd{
     padding-bottom: 12px;
@@ -118,9 +125,9 @@ section>div>ol li>dl>dt{
 
 
 
-section>div>ol li>dl>dd>img{
+section>div:last-child>ol li>dl>dd>img{
     width: 220px;
 }
-section>div>ol li>dl>dd>img:first-child{
+section>div:last-child>ol li>dl>dd>img:first-child{
     margin-right: 10px;
 }

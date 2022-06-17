@@ -29,6 +29,8 @@
     color: #656565;
     border-radius: 25px 25px;
     background-color: #f1f1f1;
+    padding-left:0;
+    padding-right:0;
 }
 
 /* 연혁 페이징 버튼 */

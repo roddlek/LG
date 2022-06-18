@@ -23,7 +23,6 @@
     justify-content: space-between;
 }
 .tabBtn>ul>li{
-    padding: 0 30px;
     text-align: center;
     line-height: 45px;
     color: #656565;
@@ -32,22 +31,32 @@
     padding-left:0;
     padding-right:0;
 }
+.tabBtn>ul>li>a{
+    padding: 0 30px;
+}
 
 /* 연혁 페이징 버튼 */
-#History>section:nth-child(3)>ol{
+.pagingBtn{
     width: 1440px;
     margin: 0 auto 50px;
+    overflow: hidden;
 }
-#History>section:nth-child(3)>ol li{
+.pagingBtn>ol{
+    float: right;
+}
+.pagingBtn>ol li{
     font-size: 14px;
     font-weight: bold;
     color: #af0046;
     float: left;
 }
-#History>section:nth-child(3)>ol li::before{
+.pagingBtn>ol li::before{
+    display: block;
     content: "";
     width: 12px;
     height: 12px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
     background-color: #af0046;
 }
 
@@ -66,7 +75,7 @@ section>h4{
 section h4 + p{
     margin-bottom: 50px;
 }
-section>div>ol{
+section>div:last-child>ol{
     width: 5990px;
     height: 720px;
     padding: 50px 100px 0 230px;
@@ -74,15 +83,15 @@ section>div>ol{
     background: url("/image/lg/history_bg.png") repeat-x left center;
     overflow: hidden;
 }
-section>div>ol li{
+section>div:last-child>ol li{
     float: left;
     /* position: relative; */
 }
-section>div>ol li>dl{
+section>div:last-child>ol li>dl{
     padding-left: 18px;
     border-left: 1px solid #af0046;
 }
-section>div>ol li>dl>dt{
+section>div:last-child>ol li>dl>dt{
     margin-bottom: 27px;
     font-size: 27px;
     font-weight: bold;

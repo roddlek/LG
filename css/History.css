@@ -43,7 +43,16 @@
 }
 .pagingBtn>ol{
     float: right;
-    background: url(/image/lg/history_paging.png) repeat-x top;
+    position: relative;
+}
+.pagingBtn>ol::before{
+    display: block;
+    content: '';
+    width: 168px;
+    border-top: 1px solid #dedede;
+    position: absolute;
+    left: 30px; top: 6px;
+    z-index: -1;
 }
 .pagingBtn>ol li{
     margin-left: 20px;

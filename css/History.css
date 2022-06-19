@@ -43,8 +43,10 @@
 }
 .pagingBtn>ol{
     float: right;
+    background: url(/image/lg/history_paging.png) repeat-x top;
 }
 .pagingBtn>ol li{
+    margin-left: 20px;
     font-size: 14px;
     font-weight: bold;
     color: #af0046;
@@ -55,7 +57,7 @@
     content: "";
     width: 12px;
     height: 12px;
-    margin: 0 auto 10px;
+    margin: 0 auto 14px;
     border-radius: 50%;
     background-color: #af0046;
 }
@@ -76,7 +78,7 @@ section h4 + p{
     margin-bottom: 50px;
 }
 section>div:last-child>ol{
-    width: 5990px;
+    width: 6800px;
     height: 720px;
     padding: 50px 100px 0 230px;
     box-sizing: border-box;
@@ -85,11 +87,12 @@ section>div:last-child>ol{
 }
 section>div:last-child>ol li{
     float: left;
-    /* position: relative; */
+    height: 100%;
+    position: relative;
 }
 section>div:last-child>ol li>dl{
     padding-left: 18px;
-    border-left: 1px solid #af0046;
+    border-left: 2px solid #af0046;
 }
 section>div:last-child>ol li>dl>dt{
     margin-bottom: 27px;
@@ -105,7 +108,7 @@ section>div:last-child>ol li>dl>dt{
 }
 .up_H dl{
     position: absolute;
-    left: 0; top: 0;
+    left: 0; bottom: 360px;
 }
 .up_H dl>dd{
     padding-bottom: 12px;

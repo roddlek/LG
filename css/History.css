@@ -86,6 +86,10 @@ section>h4{
 section h4 + p{
     margin-bottom: 50px;
 }
+section>div:last-child{
+    width: 100%;
+    overflow: hidden;
+}
 section>div:last-child>ol{
     width: 6800px;
     height: 720px;
@@ -93,6 +97,10 @@ section>div:last-child>ol{
     box-sizing: border-box;
     background: url("/image/lg/history_bg.png") repeat-x left center;
     overflow: hidden;
+}
+/* 너비값 정리 */
+#tab2>div:last-child>ol{
+    width: 6200px;
 }
 section>div:last-child>ol li{
     float: left;

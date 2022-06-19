@@ -71,10 +71,17 @@
     background-color: #af0046;
 }
 
+#tab2>.pagingBtn>ol::before{
+    width: 115px;
+}
+#tab3>.pagingBtn>ol::before{
+    width: 230px;
+}
 
 /* 연혁 공통 */
 #tab1, #tab2, #tab3{
     width: 100%;
+    margin-bottom: 0;
 }
 section>h4, section h4 + p{
     width: 1440px;

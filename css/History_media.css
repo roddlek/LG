@@ -1,3 +1,362 @@
 @charset "utf-8";
 
-@media screen and (max-width:) and (min-width:){}
+@media screen and (max-width:980px) and (min-width:651px){
+    /* 공통사항 */
+    section h4{
+        font-size: 45px;
+        text-align: center;
+    }
+    section h4 + p{
+        width: 100%;
+        font-size: 27px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
+    #History>header>h3{
+        font-size: 45px;
+    }
+    /* 탭 메뉴 */
+    .tabBtn{
+        width: 94vw;
+    }
+    .tabBtn>ul{
+        width: 420px;
+    }
+    .tabBtn>ul>li{
+        width: 135px;
+        padding: 5px 0;
+        line-height: 30px;
+        border-radius: 15px 15px;
+    }
+    .tabBtn>ul>li>a{
+        padding: 0;
+    }
+    /*  */
+    .pagingBtn>ol{
+        float: none;
+        width: 232px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    #tab2>.pagingBtn>ol{
+        width: 178px;
+    }
+    #tab3>.pagingBtn>ol{
+        width: 292px;
+    }
+    /* 연혁 */
+    section>div:last-child{
+        width: 100%;
+        background-color: #dedede;
+    }
+    #tab1>div:last-child>ol, #tab2>div:last-child>ol, #tab3>div:last-child>ol{
+        width: 650px;
+        height: auto;
+        padding: 50px 0;
+        margin: 0 auto;
+        box-sizing: border-box;
+        background: none;
+        overflow: hidden;
+        background: url("/image/lg/history_bg2.png") repeat-y left top;
+    }
+    section>div:last-child>ol li{
+        float: none;
+        height: auto;
+        position: static;
+        margin-bottom: 70px;
+    }
+    section>div:last-child>ol li>dl{
+        padding-left: 0;
+        border-left: none;
+        transform: translateX(200px);
+    }
+    section>div:last-child>ol li>dl>dt{
+        width: 107px;
+        margin-bottom: 0;
+        position: absolute;
+        left: -200px; top: 0;
+    }
+    section>div:last-child>ol li>dl>dt::after{
+        display: block;
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-color: #af0046;
+    }
+    section>div:last-child>ol li>dl>dd{
+        width: 450px;
+        margin-bottom: 18px;
+    }
+    .up_H{
+        width: auto;
+        height: auto;
+        position: static;
+    }
+    .up_H dl{
+        position: static;
+        left: 0; bottom: 0;
+    }
+    .up_H dl>dd{
+        padding-bottom: 0;
+    }
+    .up_H dl>dd:last-child{
+        padding-bottom: 0;
+    }
+    .down_H{
+        padding-top: 0;
+    }
+    .down_H dl>dt{
+        padding-top: 0;
+    }
+    .down_H dl>dd{
+        padding-bottom: 0;
+    }
+    .down_H dl>dd:last-child{
+        padding-bottom: 0;
+    }
+    /*  */
+    section>div>ol li>dl>dd>img{
+        display: inline-block;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:650px) and (min-width:580px){
+    /* 공통사항 */
+    section h4{
+        font-size: 45px;
+        text-align: center;
+    }
+    section h4 + p{
+        width: 100%;
+        font-size: 27px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
+    #History>header>h3{
+        font-size: 45px;
+    }
+    /* 탭 메뉴 */
+    .tabBtn{
+        width: 94vw;
+    }
+    .tabBtn>ul{
+        width: 420px;
+    }
+    .tabBtn>ul>li{
+        width: 135px;
+        padding: 5px 0;
+        line-height: 30px;
+        border-radius: 15px 15px;
+    }
+    .tabBtn>ul>li>a{
+        padding: 0;
+    }
+    /*  */
+    .pagingBtn>ol{
+        float: none;
+        width: 232px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    #tab2>.pagingBtn>ol{
+        width: 178px;
+    }
+    #tab3>.pagingBtn>ol{
+        width: 292px;
+    }
+    /* 연혁 */
+    section>div:last-child{
+        width: 100%;
+        background-color: #dedede;
+    }
+    #tab1>div:last-child>ol, #tab2>div:last-child>ol, #tab3>div:last-child>ol{
+        width: 560px;
+        height: auto;
+        padding: 50px 0;
+        margin: 0 auto;
+        box-sizing: border-box;
+        background: none;
+        overflow: hidden;
+        background: url("/image/lg/history_bg2.png") repeat-y left top;
+    }
+    section>div:last-child>ol li{
+        float: none;
+        height: auto;
+        position: static;
+        margin-bottom: 70px;
+    }
+    section>div:last-child>ol li>dl{
+        padding-left: 0;
+        border-left: none;
+        transform: translateX(200px);
+    }
+    section>div:last-child>ol li>dl>dt{
+        width: 107px;
+        margin-bottom: 0;
+        position: absolute;
+        left: -200px; top: 0;
+    }
+    section>div:last-child>ol li>dl>dd{
+        width: 360px;
+        margin-bottom: 18px;
+    }
+    .up_H{
+        width: auto;
+        height: auto;
+        position: static;
+    }
+    .up_H dl{
+        position: static;
+        left: 0; bottom: 0;
+    }
+    .up_H dl>dd{
+        padding-bottom: 0;
+    }
+    .up_H dl>dd:last-child{
+        padding-bottom: 0;
+    }
+    .down_H{
+        padding-top: 0;
+    }
+    .down_H dl>dt{
+        padding-top: 0;
+    }
+    .down_H dl>dd{
+        padding-bottom: 0;
+    }
+    .down_H dl>dd:last-child{
+        padding-bottom: 0;
+    }
+    /*  */
+    section>div>ol li>dl>dd>img{
+        display: block;
+    }
+    section>div>ol li>dl>dd>img:first-child{
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:579px) and (min-width:300px){
+    /* 공통사항 */
+    section h4{
+        font-size: 36px;
+        text-align: center;
+    }
+    section h4 + p{
+        width: 100%;
+        font-size: 27px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
+    #History>header>h3{
+        font-size: 36px;
+    }
+    /* 탭 메뉴 */
+    .tabBtn{
+        width: 0;
+        display: none;
+    }
+    .tabBtn>ul{
+        width: 0;
+    }
+    .tabBtn>ul>li{
+        width: 0;
+        padding: 0;
+        line-height: 0;
+        border-radius: 0;
+    }
+    .tabBtn>ul>li>a{
+        padding: 0;
+    }
+    /*  */
+    .pagingBtn>ol{
+        float: none;
+        width: 232px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    #tab2>.pagingBtn>ol{
+        width: 178px;
+    }
+    #tab3>.pagingBtn>ol{
+        width: 292px;
+    }
+    /* 연혁 */
+    section>div:last-child{
+        width: 100%;
+        background-color: #dedede;
+    }
+    #tab1>div:last-child>ol, #tab2>div:last-child>ol, #tab3>div:last-child>ol{
+        width: 96vw;
+        height: auto;
+        padding: 30px 0;
+        margin: 0 auto;
+        box-sizing: border-box;
+        background: none;
+        text-align: center;
+    }
+    section>div:last-child>ol li{
+        float: none;
+        height: auto;
+        position: static;
+        margin-bottom: 50px;
+    }
+    section>div:last-child>ol li>dl{
+        padding-left: 0;
+        border-left: none;
+    }
+    section>div:last-child>ol li>dl>dt{
+        margin-bottom: 27px;
+    }
+    section>div:last-child>ol li>dl>dd{
+        margin-bottom: 14px;
+        line-height: 24px;
+    }
+    .up_H{
+        width: auto;
+        height: auto;
+        position: static;
+    }
+    .up_H dl{
+        position: static;
+        left: 0; bottom: 0;
+    }
+    .up_H dl>dd{
+        padding-bottom: 0;
+    }
+    .up_H dl>dd:last-child{
+        padding-bottom: 0;
+    }
+    .down_H{
+        padding-top: 0;
+    }
+    .down_H dl>dt{
+        padding-top: 0;
+    }
+    .down_H dl>dd{
+        padding-bottom: 0;
+    }
+    .down_H dl>dd:last-child{
+        padding-bottom: 0;
+    }
+    /*  */
+    section>div>ol li>dl>dd>img{
+        margin: 0 auto;
+    }
+    section>div>ol li>dl>dd>img:first-child{
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+}

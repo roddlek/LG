@@ -75,14 +75,16 @@
         width: 107px;
         margin-bottom: 0;
         position: absolute;
-        left: -200px; top: 0;
+        left: -200px; top: -4px;
     }
     section>div:last-child>ol li>dl>dt::after{
         display: block;
         content: '';
         width: 12px;
         height: 12px;
+        border-radius: 50%;
         background-color: #af0046;
+        transform: translate(152px, -20px);
     }
     section>div:last-child>ol li>dl>dd{
         width: 450px;
@@ -202,6 +204,15 @@
         position: absolute;
         left: -200px; top: 0;
     }
+    section>div:last-child>ol li>dl>dt::after{
+        display: block;
+        content: '';
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #af0046;
+        transform: translate(152px, -20px);
+    }
     section>div:last-child>ol li>dl>dd{
         width: 360px;
         margin-bottom: 18px;
@@ -262,6 +273,9 @@
     
     #History>header>h3{
         font-size: 36px;
+    }
+    #History>header>h3>span:last-child{
+        width: 100%;
     }
     /* 탭 메뉴 */
     .tabBtn{

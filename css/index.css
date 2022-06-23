@@ -40,10 +40,12 @@ article>div>p{
     height: 100%;
 }
 #gallery>div>ul>li{
+    float: left;
     width:25%;
     height:100%;
     background: url("/image/gallery1.jpg") no-repeat center;
     background-size: cover;
+    position: relative;
 }
 #gallery>div>ul>li>a{
     display:block;
@@ -76,13 +78,13 @@ article>div>p{
     margin-right: 10px;
 }
 
-#gallery>div>ul>li:nth-child(2){
+#gallery>div>ul>li.no02{
     background-image: url("/image/media/main_media2.png");
 }
-#gallery>div>ul>li:nth-child(3){
+#gallery>div>ul>li.no03{
     background-image: url("/image/media/main_media3.jpg");
 }
-#gallery>div>ul>li:nth-child(4){
+#gallery>div>ul>li.no04{
     background-image: url("/image/lg/main_lg3.jpg");
 }
 
@@ -94,15 +96,11 @@ article>div>p{
 #slideBtn a{
     width: 16px;
     height: 16px;
-    margin: 0 18px;
+    margin: 0 10px;
     display: inline-block;
     text-indent: -99999px;
     border-radius: 50%;
-    background-color: #d9d9d9;
-}
-#slideBtn a:first-child{
-    width: 50px;
-    border-radius: 15px 15px;
+    background-color: #fff;
 }
 
 

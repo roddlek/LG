@@ -43,7 +43,7 @@ article>div>p{
     float: left;
     width:25%;
     height:100%;
-    background: url("/image/gallery1.jpg") no-repeat center;
+    background: url("/image/gallery1.png") no-repeat center;
     background-size: cover;
     position: relative;
 }
@@ -85,7 +85,7 @@ article>div>p{
     background-image: url("/image/media/main_media3.jpg");
 }
 #gallery>div>ul>li.no04{
-    background-image: url("/image/lg/main_lg3.jpg");
+    background-image: url("/image/csr/main_csr3.png");
 }
 
 #slideBtn{

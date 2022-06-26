@@ -22,24 +22,18 @@ $(function(){
     function timer(){
         move = setInterval(gallery, 3500);
     }
-    timer();
+    //timer();
 
 
     ///////////슬라이드 버튼
     //초기 설정
-    $('#slideBtn>a:first').css({width: '60px',
-                                borderRadius: '15px 15px'})
-    let slideNum = $('#slideBtn>a').length;
-    //
-    function slideButton(){
-        for(let i = 1; i<slideNum ; i++){
-            $('#slideBtn>a').css({width: '16px', height: '16px'})
+    $('#slideBtn>a').click(function(e){
+        let slideIndex = $(this).index() + 1;
+        //console.log(slideIndex);
+        if(slideIndex < 4){
+            $('#gallery>div>ul').css('margin-left', '-' + (liWidth * slideIndex)  + 'px');
+        }else if(slideIndex = 4){
+            $('#gallery>div>ul').css('margin-left', '-' + liWidth *(slideIndex - 4)  + 'px');
         }
-        $('#slideBtn>a:eq(' + slideNum + ')').animate({width: '60px', borderRadius: '15px 15px'}, 600)
-    }
-    //슬라이드 버튼 타이머
-    // function slideTimer(){
-    //     slide = setInterval(slideButton, 3500)
-    // }
-    // slideTimer();
+    })
 })

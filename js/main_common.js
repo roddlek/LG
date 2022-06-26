@@ -14,10 +14,13 @@ $(function(){
     $('#siteBtn>ul').hide();
     $('#siteBtn>button').on('click', function(){
         $('#siteBtn>ul').toggle();
-        $('#siteBtn>button>span:last-child').css('transform','rotate(180deg)')
-        // $('#siteBtn>button>span:last>img').css({'transform': 'rotate(' + 180 + 'deg)'});
-        // $('#siteBtn>button').on('click', function(){
-        //     $('#siteBtn>ul').hide();
-        // })
+
+        let block = $(this).siblings('ul.siteBtn').css('display');
+        //console.log(block);
+        if(block == 'block'){
+            $('#siteBtn>button>span:last-child').css('transform','rotate(' + 180 + 'deg)');
+        }else if(block == 'none'){
+            $('#siteBtn>button>span:last-child').css('transform','rotate(' + 0 + 'deg)');
+        }
     })
 })

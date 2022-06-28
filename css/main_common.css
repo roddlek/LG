@@ -127,6 +127,7 @@ header nav>ul li a{
 aside{
     position: fixed;
     right: 27px; bottom: 27px;
+    z-index: 200;
 }
 aside p{
     width: 50px;
@@ -201,6 +202,7 @@ footer>div>h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 #siteBtn button span{
     font-size: 14px;

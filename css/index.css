@@ -38,9 +38,11 @@ article>div>p{
     width: 400%;
     /* width: 7600px; */
     height: 100%;
+    text-align: center;
 }
 #gallery>div>ul>li{
     float: left;
+    /* display: inline-block; */
     width:25%;
     height:100%;
     background: url("/image/gallery1.png") no-repeat center;
@@ -61,6 +63,7 @@ article>div>p{
     font-size: 63px;
     font-weight: bold;
     line-height: 83px;
+    text-align: left;
 }
 .galleryPaging{
     width: 500px;

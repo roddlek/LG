@@ -17,23 +17,20 @@ $(function(){
             $('#gallery>div>ul>li>a').fadeIn();
         });
         //슬라이드 버튼
+        //초기 설정
+        $('#slideBtn>a').click(function(e){
+            let slideIndex = $(this).index() + 1;
+            //console.log(slideIndex);
+            if(slideIndex < 4){
+                $('#gallery>div>ul').css('margin-left', '-' + (liWidth * slideIndex)  + 'px');
+            }else if(slideIndex = 4){
+                $('#gallery>div>ul').css('margin-left', '-' + liWidth *(slideIndex - 4)  + 'px');
+            }
+        })
     }
     //갤러리 타이머
     function timer(){
         move = setInterval(gallery, 3500);
     }
-    //timer();
-
-
-    ///////////슬라이드 버튼
-    //초기 설정
-    $('#slideBtn>a').click(function(e){
-        let slideIndex = $(this).index() + 1;
-        //console.log(slideIndex);
-        if(slideIndex < 4){
-            $('#gallery>div>ul').css('margin-left', '-' + (liWidth * slideIndex)  + 'px');
-        }else if(slideIndex = 4){
-            $('#gallery>div>ul').css('margin-left', '-' + liWidth *(slideIndex - 4)  + 'px');
-        }
-    })
+    timer();
 })

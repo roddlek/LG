@@ -42,6 +42,15 @@ section h4 + p{
 }
 
 /* scroll button */
+.srollBtn{
+    padding: 50px 0;
+    margin-bottom: 50px;
+    position: sticky;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
+}
 .srollBtn>ul{
     width: 396px;
     margin: 0 auto;
@@ -54,7 +63,9 @@ section h4 + p{
     text-align: center;
     line-height: 45px;
     color: #656565;
+    border: 1px solid #f1f1f1;
     border-radius: 25px 25px;
+    box-sizing: border-box;
     background-color: #f1f1f1;
 }
 .srollBtn>ul>li:last-child{
@@ -68,6 +79,7 @@ section h4 + p{
     box-sizing: border-box;
     color: #af0043!important;
     background-color: #fff4f6!important;
+    border-radius: 25px 25px;
 }
 
 /* 필터 버튼 */

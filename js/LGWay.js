@@ -1,5 +1,5 @@
 $(function(){
-    ///////////스크롤 버튼 액션
+    ///////////스크롤 버튼 클릭 액션
     //클래스 초기 설정
     $('.srollBtn>ul>li>a').first().addClass('clicked');
     $('.srollBtn>ul>li>a').on('click', function(e){
@@ -10,11 +10,11 @@ $(function(){
         let secH = $('.srollBtn').innerHeight();
         let secId = $(this).attr('href');
         let secTop = $(secId).offset().top;
-        //액션
+        //스크롤 액션
         $('html, body').animate({scrollTop: secTop - secH + 'px'}, 800);
     });
 
-    ///////////스크롤 버튼 액션
+    ///////////스크롤 액션
     $(window).scroll(function(){
         //초기 설정
         let num = $(document).scrollTop();

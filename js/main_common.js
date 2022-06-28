@@ -9,6 +9,10 @@ $(function(){
         $(this).slideUp();
     });
 
+    ///////////푸터
+    $('aside').click(function(e){
+        $('html, body').animate({scrollTop: 0}, 600);
+    })
    
     ///////////푸터
     $('#siteBtn>ul').hide();

@@ -3,18 +3,22 @@
 #History>header{
     width: 100%;
     height: 800px;
-    margin-bottom: 50px;
-    background: url("/image/lg/main_lg3.jpg") no-repeat center;
+    margin-bottom: 30px;
+    background: url("/image/lg/main_lg3.png") no-repeat center;
     background-size: cover;
     position: relative;
 }
 
 /* 탭메뉴 버튼 */
 .tabBtn{
-    width: 76.421052631578947%;
     /* width: 1452px; */
-    margin: 0 auto 100px;
+    padding: 20px 0;
+    margin: 0 auto 80px;
     overflow: hidden;
+    background-color: #fff;
+    position: sticky;
+    left: 0; top: 0;
+    z-index: 100;
 }
 .tabBtn>ul{
     width: 740px;
@@ -26,7 +30,9 @@
     text-align: center;
     line-height: 45px;
     color: #656565;
+    border: 1px solid #f1f1f1;
     border-radius: 25px 25px;
+    box-sizing: border-box;
     background-color: #f1f1f1;
 }
 .tabBtn>ul>li>a{
@@ -37,7 +43,7 @@
 .pagingBtn{
     width: 76.421052631578947%;
     /* width: 1440px; */
-    margin: 0 auto 50px;
+    margin: 0 auto 15px;
     overflow: hidden;
 }
 .pagingBtn>ol{
@@ -59,6 +65,7 @@
     font-weight: bold;
     color: #af0046;
     float: left;
+    cursor: pointer;
 }
 .pagingBtn>ol li::before{
     display: block;
@@ -81,6 +88,7 @@
 #tab1, #tab2, #tab3{
     width: 100%;
     margin-bottom: 0;
+    display: none;
 }
 section>h4, section h4 + p{
     width: 76.421052631578947%;
@@ -95,12 +103,12 @@ section h4 + p{
 }
 section>div:last-child{
     width: 100%;
-    overflow: hidden;
+    overflow: scroll;
 }
 section>div:last-child>ol{
-    width: 6800px;
+    /* width: 6800px; */
     height: 720px;
-    padding: 50px 100px 0 230px;
+    padding: 50px 0 0 230px;
     box-sizing: border-box;
     background: url("/image/lg/history_bg.png") repeat-x left center;
     overflow: hidden;

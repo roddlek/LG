@@ -103,10 +103,10 @@ section h4 + p{
 }
 section>div:last-child{
     width: 100%;
-    overflow: scroll;
+    overflow: auto;
 }
 section>div:last-child>ol{
-    /* width: 6800px; */
+    width: 11050px;
     height: 720px;
     padding: 50px 0 0 230px;
     box-sizing: border-box;
@@ -115,7 +115,10 @@ section>div:last-child>ol{
 }
 /* 너비값 정리 */
 #tab2>div:last-child>ol{
-    width: 6200px;
+    width: 10000px;
+}
+#tab3>div:last-child>ol{
+    width: 17200px;
 }
 section>div:last-child>ol li{
     float: left;

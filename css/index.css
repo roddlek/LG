@@ -6,6 +6,18 @@
     /* width: 1440px; */
     margin: 0 auto;
 }
+/* 이미지 마우스 오버 */
+figure>div{
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+figure>div>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s linear;
+}
 
 
 
@@ -119,11 +131,21 @@ article>div>p{
     height: 100%;
     border: solid 1px #dedede;
     box-sizing: border-box;
+    overflow: hidden;
 }
-#lgBaro>div>div>ul li figure img{
+/* #lgBaro>div>div>ul li figure>div{
     width: 100%;
     height: 280px;
+    overflow: hidden;
+} */
+/* #lgBaro>div>div>ul li figure>div>img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    transition: all 0.5s linear;
+} */
+#lgBaro>div>div>ul li:hover figure>div>img{
+    transform: scale(1.1);
 }
 #lgBaro>div>div>ul li figure>figcaption{
     padding: 30px;
@@ -176,10 +198,18 @@ article>div>p{
     box-sizing: border-box;
     background-color: #fff;
 }
-#publicContributeBox>div figure>img{
+/* #publicContributeBox>div figure>div{
     width: 100%;
     height: 280px;
+    overflow: hidden;
+} */
+/* #publicContributeBox>div figure>div>img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+} */
+#publicContributeBox>div figure:hover>div>img{
+    transform: scale(1.1);
 }
 #publicContributeBox>div figure>figcaption{
     padding: 30px;

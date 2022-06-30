@@ -85,7 +85,7 @@
     }
 
     /* 바로가기 섹션 */
-    #lgBaro>div>div>ul li figure img{
+    #lgBaro>div>div>ul li figure>div{
         height: 240px;
     }
     #lgBaro>div>div>ul li figure>figcaption{

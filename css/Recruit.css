@@ -88,25 +88,30 @@
 
 /* lgti 결과 모닫창 */
 #lgtiModal{
-    width: 600px;
+    width: 500px;
     padding: 50px 0;
     border: 5px solid #af0046;
     text-align: center;
     background-color: #fff;
-    position: absolute;
+    position: fixed;
     left: 50%; top: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
 }
 #lgtiModal>h4{
-    padding-top: 270px;
+    font-size: 36px;
+    padding-top: 220px;
     background: url("/image/lgti_modal.png") no-repeat center top;
+    background-size: 40%;
 }
 #lgtiModal>p{
     width: 100%;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 27px;
 }
 #lgtiModal>ul:nth-child(3){
-    width: 240px;
+    width: 200px;
     margin: 0 auto 50px;
     display: flex;
     justify-content: space-between;
@@ -114,8 +119,8 @@
 }
 #lgtiModal>ul:nth-child(3) li>a{
     display: block;
-    width: 46px;
-    height: 46px;
+    width: 36px;
+    height: 36px;
     text-indent: -99999px;
     background: url("/image/modal_facebook.png") no-repeat center top;
     background-size: cover;

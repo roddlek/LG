@@ -54,9 +54,10 @@
     font-weight: bold;
     line-height: 45px;
 }
-#Recruit>section:nth-child(2)>div>div>ul li>dl>dt>span{
+#Recruit>section:nth-child(2)>div>div>span{
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
+    padding-left: 6px;
     font-size: 18px;
     color: #af0046;
 }
@@ -79,6 +80,7 @@
     border-radius: 30px 30px;
     color: #656565;
     background-color: #dedede;
+    cursor: pointer;
 }
 
 

@@ -16,13 +16,12 @@ figure>div>img{
 #Subsidiary>header{
     width: 100%;
     height: 800px;
-    margin-bottom: 50px;
     background: url("/image/lg/main_lg4.png") no-repeat center;
     background-size: cover;
     position: relative;
 }
 
-#Subsidiary>section{
+.scrollBtn + section{
     width: 75.789473684210526%;
     /* width: 1440px; */
     margin: 0 auto 100px;

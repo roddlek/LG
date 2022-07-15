@@ -89,6 +89,7 @@
     width: 100%;
     margin-bottom: 0;
     display: none;
+    position: relative;
 }
 section>h4, section h4 + p{
     width: 76.421052631578947%;
@@ -101,12 +102,12 @@ section>h4{
 section h4 + p{
     margin-bottom: 50px;
 }
-section>div:last-child{
+section>div:nth-child(4){
     width: 100%;
-    overflow: auto;
+    overflow: hidden;
 }
-section>div:last-child>ol{
-    width: 11050px;
+section>div:nth-child(4)>ol{
+    width: 11290px;
     height: 720px;
     padding: 50px 0 0 230px;
     box-sizing: border-box;
@@ -114,22 +115,22 @@ section>div:last-child>ol{
     overflow: hidden;
 }
 /* 너비값 정리 */
-#tab2>div:last-child>ol{
-    width: 10000px;
+#tab2>div:nth-child(4)>ol{
+    width: 10500px;
 }
-#tab3>div:last-child>ol{
-    width: 17200px;
+#tab3>div:nth-child(4)>ol{
+    width: 17470px;
 }
-section>div:last-child>ol li{
+section>div:nth-child(4)>ol li{
     float: left;
     height: 100%;
     position: relative;
 }
-section>div:last-child>ol li>dl{
+section>div:nth-child(4)>ol li>dl{
     padding-left: 18px;
     border-left: 2px solid #af0046;
 }
-section>div:last-child>ol li>dl>dt{
+section>div:nth-child(4)>ol li>dl>dt{
     margin-bottom: 27px;
     font-size: 27px;
     font-weight: bold;
@@ -172,4 +173,31 @@ section>div>ol li>dl>dd>img{
 }
 section>div>ol li>dl>dd>img:first-child{
     margin-right: 10px;
+}
+
+
+/* 스크롤 */
+.scrollBar{
+    width: 30%;
+    position: absolute;
+    left: 50%; bottom: 15px;
+    transform: translateX(-50%);
+}
+.scrollBar>div{
+    width: 100%;
+    height: 15px;
+    margin: 0 auto;
+    padding: 2px 0;
+    border-radius: 20px;
+    background-color: #eee;
+    position: relative;
+}
+.scrollBar>div>span{
+    width: 50px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #af0046;
+    position: absolute;
+    left: 2px; top: 50%;
+    transform: translateY(-50%);
 }

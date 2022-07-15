@@ -26,7 +26,7 @@ $(function(){
         let historyW = $(pageNum).position().left
         console.log(pageNum, historyW)
         //페이지 이동 액션
-        $('section>div:last-child>ol:not(:animated)').animate({marginLeft: '-=' + historyW + 'px'}, 1000);
+        $('section>div:nth-child(4)>ol:not(:animated)').animate({marginLeft: '-=' + historyW + 'px'}, 1000);
         // if(pageNum = '#1947'){
         //     $('section>div:last-child>ol').css({marginLeft: 0})
         // }

@@ -18,7 +18,7 @@
     }
     /* 탭 메뉴 */
     .tabBtn{
-        width: 94vw;
+        width: 100%;
     }
     .tabBtn>ul{
         width: 420px;
@@ -46,11 +46,11 @@
         width: 292px;
     }
     /* 연혁 */
-    section>div:last-child{
+    section>div:nth-child(4){
         width: 100%;
         background-color: #dedede;
     }
-    #tab1>div:last-child>ol, #tab2>div:last-child>ol, #tab3>div:last-child>ol{
+    #tab1>div:nth-child(4)>ol, #tab2>div:nth-child(4)>ol, #tab3>div:nth-child(4)>ol{
         width: 650px;
         height: auto;
         padding: 50px 0;
@@ -60,24 +60,24 @@
         overflow: hidden;
         background: url("/image/lg/history_bg2.png") repeat-y left top;
     }
-    section>div:last-child>ol li{
+    section>div:nth-child(4)>ol li{
         float: none;
         height: auto;
         position: static;
         margin-bottom: 70px;
     }
-    section>div:last-child>ol li>dl{
+    section>div:nth-child(4)>ol li>dl{
         padding-left: 0;
         border-left: none;
         transform: translateX(200px);
     }
-    section>div:last-child>ol li>dl>dt{
+    section>div:nth-child(4)>ol li>dl>dt{
         width: 107px;
         margin-bottom: 0;
         position: absolute;
         left: -200px; top: -4px;
     }
-    section>div:last-child>ol li>dl>dt::after{
+    section>div:nth-child(4)>ol li>dl>dt::after{
         display: block;
         content: '';
         width: 12px;
@@ -86,7 +86,7 @@
         background-color: #af0046;
         transform: translate(152px, -20px);
     }
-    section>div:last-child>ol li>dl>dd{
+    section>div:nth-child(4)>ol li>dl>dd{
         width: 450px;
         margin-bottom: 18px;
     }
@@ -120,6 +120,26 @@
     /*  */
     section>div>ol li>dl>dd>img{
         display: inline-block;
+    }
+    /* 스크롤 */
+    .scrollBar{
+        display: none;
+    }
+    .scrollBar>div{
+        width: 0;
+        height: 0;
+        margin: 0 auto;
+        border: none;
+        border-radius: 0;
+        background-color: #eee;
+        position: static;
+    }
+    .scrollBar>div>span{
+        width: 0;
+        height: 0;
+        border-radius: 0;
+        background-color: #af0046;
+        position: static;
     }
 }
 
@@ -173,11 +193,11 @@
         width: 292px;
     }
     /* 연혁 */
-    section>div:last-child{
+    section>div:nth-child(4){
         width: 100%;
         background-color: #dedede;
     }
-    #tab1>div:last-child>ol, #tab2>div:last-child>ol, #tab3>div:last-child>ol{
+    #tab1>div:nth-child(4)>ol, #tab2>div:nth-child(4)>ol, #tab3>div:nth-child(4)>ol{
         width: 560px;
         height: auto;
         padding: 50px 0;
@@ -187,24 +207,24 @@
         overflow: hidden;
         background: url("/image/lg/history_bg2.png") repeat-y left top;
     }
-    section>div:last-child>ol li{
+    section>div:nth-child(4)>ol li{
         float: none;
         height: auto;
         position: static;
         margin-bottom: 70px;
     }
-    section>div:last-child>ol li>dl{
+    section>div:nth-child(4)>ol li>dl{
         padding-left: 0;
         border-left: none;
         transform: translateX(200px);
     }
-    section>div:last-child>ol li>dl>dt{
+    section>div:nth-child(4)>ol li>dl>dt{
         width: 107px;
         margin-bottom: 0;
         position: absolute;
         left: -200px; top: 0;
     }
-    section>div:last-child>ol li>dl>dt::after{
+    section>div:nth-child(4)>ol li>dl>dt::after{
         display: block;
         content: '';
         width: 12px;
@@ -213,7 +233,7 @@
         background-color: #af0046;
         transform: translate(152px, -20px);
     }
-    section>div:last-child>ol li>dl>dd{
+    section>div:nth-child(4)>ol li>dl>dd{
         width: 360px;
         margin-bottom: 18px;
     }
@@ -252,6 +272,26 @@
         margin-right: 0;
         margin-bottom: 12px;
     }
+    /* 스크롤 */
+    .scrollBar{
+        display: none;
+    }
+    .scrollBar>div{
+        width: 0;
+        height: 0;
+        margin: 0 auto;
+        border: none;
+        border-radius: 0;
+        background-color: #eee;
+        position: static;
+    }
+    .scrollBar>div>span{
+        width: 0;
+        height: 0;
+        border-radius: 0;
+        background-color: #af0046;
+        position: static;
+    }
 }
 
 
@@ -270,7 +310,9 @@
         margin-bottom: 50px;
         text-align: center;
     }
-    
+    #History{
+        margin-bottom: 0;
+    }
     #History>header>h3{
         font-size: 36px;
     }
@@ -308,11 +350,11 @@
         width: 292px;
     }
     /* 연혁 */
-    section>div:last-child{
+    section>div:nth-child(4){
         width: 100%;
         background-color: #dedede;
     }
-    #tab1>div:last-child>ol, #tab2>div:last-child>ol, #tab3>div:last-child>ol{
+    #tab1>div:nth-child(4)>ol, #tab2>div:nth-child(4)>ol, #tab3>div:nth-child(4)>ol{
         width: 96vw;
         height: auto;
         padding: 30px 0;
@@ -321,20 +363,20 @@
         background: none;
         text-align: center;
     }
-    section>div:last-child>ol li{
+    section>div:nth-child(4)>ol li{
         float: none;
         height: auto;
         position: static;
         margin-bottom: 50px;
     }
-    section>div:last-child>ol li>dl{
+    section>div:nth-child(4)>ol li>dl{
         padding-left: 0;
         border-left: none;
     }
-    section>div:last-child>ol li>dl>dt{
+    section>div:nth-child(4)>ol li>dl>dt{
         margin-bottom: 27px;
     }
-    section>div:last-child>ol li>dl>dd{
+    section>div:nth-child(4)>ol li>dl>dd{
         margin-bottom: 14px;
         line-height: 24px;
     }
@@ -372,5 +414,25 @@
     section>div>ol li>dl>dd>img:first-child{
         margin-right: 0;
         margin-bottom: 12px;
+    }
+    /* 스크롤 */
+    .scrollBar{
+        display: none;
+    }
+    .scrollBar>div{
+        width: 0;
+        height: 0;
+        margin: 0 auto;
+        border: none;
+        border-radius: 0;
+        background-color: #eee;
+        position: static;
+    }
+    .scrollBar>div>span{
+        width: 0;
+        height: 0;
+        border-radius: 0;
+        background-color: #af0046;
+        position: static;
     }
 }

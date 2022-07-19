@@ -1,4 +1,4 @@
-window.Inadata = [
+window.data = [
     {
         "id": "0",
         "title": "LG 올레드 에보(OLED evo) 글로벌 친환경 인증 3관왕",
@@ -87,5 +87,11 @@ window.Inadata = [
         "type": "보도자료",
         "image": "esg14.jpeg",
         "dataType": "news"
+    },{
+        "id": "14",
+        "title": "LG이노텍, ESG경영 내실 강화에 주력",
+        "type": "동영상",
+        "image": "esg15.jpeg",
+        "dataType": "video"
     }
 ]

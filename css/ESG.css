@@ -27,36 +27,36 @@ figure>div>img{
     /* width: 1440px; */
     margin: 0 auto 100px;
 }
-#esgList>ul{
+#esgList>#root>ul{
     width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 18px;
 }
-#esgList>ul li{
+#esgList>#root>ul li{
     width: 31.944444444444444%;
     /* width: 460px; */
     margin-bottom: 30px;
     border: 1px solid #dedede;
     box-sizing: border-box;
 }
-#esgList>ul li:hover>figure>div>img{
+#esgList>#root>ul li:hover>figure>div>img{
     transform: scale(1.1);
 }
-#esgList>ul li>figure>figcaption{
+#esgList>#root>ul li>figure>figcaption{
     padding: 27px;
 }
-#esgList>ul li>figure>figcaption>dl>dt{
+#esgList>#root>ul li>figure>figcaption>dl>dt{
     margin-bottom: 27px;
     font-weight: bold;
     color: #af0043;
 }
-#esgList>ul li>figure>figcaption>dl>dd{
+#esgList>#root>ul li>figure>figcaption>dl>dd{
     font-size: 27px;
     line-height: 36px;
 }
-#esgList>ul li>figure>figcaption>dl>dd>a{
+#esgList>#root>ul li>figure>figcaption>dl>dd>a{
     display: block;
 }
 #esgList>p{
@@ -67,4 +67,5 @@ figure>div>img{
     color: #fff;
     border-radius: 60px 60px;
     background-color: #af0043;
+    cursor: pointer;
 }

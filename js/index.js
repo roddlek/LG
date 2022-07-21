@@ -2,6 +2,12 @@ $(function(){
     ///////////갤러리
     //사이즈 정리
     let liWidth = $('#gallery>div>ul>li').width();
+    $(window).resize(function(){
+        let divWidth = $('#gallery>div').width();
+        let ulWidth = $('#gallery>div>ul').width();
+        ulWidth = divWidth * 4;
+        liWidth = divWidth;
+    })
     //초기 설정
     $('#gallery>div>ul>li:last').prependTo('#gallery>div>ul');
     $('#gallery>div>ul').css('margin-left', '-' + liWidth + 'px');

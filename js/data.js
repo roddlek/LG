@@ -23,9 +23,9 @@ window.data = [
     {
         "id": "3",
         "title": "LG유플러스, 친환경 네트워크 장비로 ESG 경영 실천",
-        "type": "보도자료",
+        "type": "동영상",
         "image": "esg4.jpg",
-        "dataType": "news"
+        "dataType": "video"
     },
     {
         "id": "4",
@@ -93,5 +93,23 @@ window.data = [
         "type": "동영상",
         "image": "esg15.jpeg",
         "dataType": "video"
+    },{
+        "id": "15",
+        "title": "LG이노텍, ESG경영 내실 강화에 주력",
+        "type": "동영상",
+        "image": "esg15.jpeg",
+        "dataType": "video"
+    },{
+        "id": "16",
+        "title": "LG이노텍, RE100 가입 승인",
+        "type": "동영상",
+        "image": "esg16.jpeg",
+        "dataType": "video"
+    },{
+        "id": "17",
+        "title": "LG생활건강, 청년 기후환경 활동가와 바다 쓰레기 정화 나선다",
+        "type": "보도자료",
+        "image": "esg17.jpeg",
+        "dataType": "news"
     }
 ]

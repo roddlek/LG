@@ -2,8 +2,8 @@ $(function(){
     ///////////네비게이션
     $('header>div>nav>ul:first>li').on('mouseover', function(){
         $('div.subNav').hide();
-        $(this).children('div.subNav').slideDown();
-        $(this).children('div.subNav').stop();
+        $(this).children('div.subNav').slideDown('slow');
+        $(this).children('div.subNav');
     });
     $('div.subNav').on('mouseleave', function(){
         $(this).slideUp();

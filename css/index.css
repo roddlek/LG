@@ -61,7 +61,7 @@ article>div>p{
     background-size: cover;
     position: relative;
 }
-#gallery>div>ul>li>a{
+#gallery>div>ul>li>div{
     display:block;
     width: 75.789473684210526%;
     /* width: 1440px; */
@@ -70,7 +70,7 @@ article>div>p{
     transform: translateX(-50%);
     color: #fff;
 }
-#gallery>div>ul>li>a p:first-child{
+#gallery>div>ul>li>div p:first-child{
     margin-bottom: 27px;
     font-size: 63px;
     font-weight: bold;

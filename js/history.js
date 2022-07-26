@@ -32,4 +32,17 @@ $(function(){
         // }
         return false;
     })
+
+    ///////////스크롤 버튼
+    // $('section>div:nth-child(4)>ol').on( "mousemove", function( event ) {
+    //     let olPageX = event.pageX;
+    //     //$('.scrollBar>div>span').event.pageX = olPageX;
+    //     console.log(olPageX);
+    //     let spanX = $('.scrollBar>div>span').position(olPageX).left
+    //     console.log(spanX)
+    //   });
+      $('.scrollBar>div>span').on("mousedown", function(event){
+        let olPageX = event.pageX;
+        console.log(olPageX);
+      })
 })

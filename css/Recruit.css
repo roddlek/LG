@@ -41,27 +41,28 @@
     width: 4950px;
     overflow: hidden;
     margin-bottom: 85px;
+    transition: all 0.4s ease-out;
 }
 #Recruit>section:nth-child(2)>div>div>ul li{
     width: 550px;
     float: left;
 }
 
-#Recruit>section:nth-child(2)>div>div>ul li>dl>dt{
-    margin-bottom: 100px;
-    padding-left: 5px;
-    font-size: 27px;
-    font-weight: bold;
-    line-height: 45px;
-}
-#Recruit>section:nth-child(2)>div>div>span{
+#Recruit>section:nth-child(2)>div>div>ul li>span{
     display: block;
     margin-bottom: 12px;
     padding-left: 6px;
     font-size: 18px;
     color: #af0046;
 }
-#Recruit>section:nth-child(2)>div>div>ul li>dl>dd{
+.question{
+    margin-bottom: 100px;
+    padding-left: 5px;
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 45px;
+}
+.answer>dd{
     width: 100%;
     margin-bottom: 15px;
     text-indent: 25px;
@@ -71,6 +72,12 @@
     box-sizing: border-box;
     background-color: #fff;
 }
+
+.fadeIn{
+    animation: fadeIn;
+    animation-duration: 0.5s;
+}
+
 /* 다음 페이지 버튼 */
 #Recruit>section:nth-child(2)>div>div>p{
     width: 120px;

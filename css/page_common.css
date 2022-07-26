@@ -100,7 +100,9 @@ section h4 + p{
     line-height: 45px;
     color: #656565;
     border-radius: 25px 25px;
+    border: 1px solid #f1f1f1;
     background-color: #f1f1f1;
+    cursor: pointer;
 }
 
 /* 더보기 버튼 */

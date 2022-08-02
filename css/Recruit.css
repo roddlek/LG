@@ -37,24 +37,7 @@
     margin: 0 auto;
     overflow: hidden;
 }
-/* #Recruit>section:nth-child(2)>div>div>ul{
-    width: 4950px;
-    overflow: hidden;
-    margin-bottom: 85px;
-    transition: all 0.4s ease-out;
-}
-#Recruit>section:nth-child(2)>div>div>ul li{
-    width: 550px;
-    float: left;
-}
 
-#Recruit>section:nth-child(2)>div>div>ul li>span{
-    display: block;
-    margin-bottom: 12px;
-    padding-left: 6px;
-    font-size: 18px;
-    color: #af0046;
-} */
 .status{
     width: 550px;
     padding-left: 6px;
@@ -91,24 +74,6 @@
     border-radius: 25px 25px;
 }
 
-@keyframes fadeIn {
-    from{opacity: 0;}
-    to{opacity: 1;}
-}
-@keyframes fadeOut {
-    from{opacity: 1;}
-    to{opacity: 0;}
-}
-
-.fadeIn{
-    animation: fadeIn;
-    animation-duration: 0.5s;
-}
-.fadeOut{
-    animation: fadeOut;
-    animation-duration: 0.5s;
-}
-
 /* 다음 페이지 버튼 */
 #Recruit>section:nth-child(2)>div>div>p{
     width: 120px;
@@ -121,7 +86,6 @@
     cursor: pointer;
 }
 
-
 /* lgti 결과 모닫창 */
 #lgtiModal{
     width: 500px;
@@ -133,6 +97,7 @@
     left: 50%; top: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
+    display: none;
 }
 #lgtiModal>h4{
     font-size: 36px;
@@ -175,10 +140,14 @@
     color: #656565;
     border-radius: 30px 30px;
     background-color: #dedede;
+    cursor: pointer;
 }
 #lgtiModal>ul:last-child li:last-child{
     color: #fff;
     background-color: #af0043;
+}
+#lgtiModal>ul:last-child li:last-child>a{
+    display: block;
 }
 
 /* 이미지 정리 */

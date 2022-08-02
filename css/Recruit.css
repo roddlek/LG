@@ -37,7 +37,7 @@
     margin: 0 auto;
     overflow: hidden;
 }
-#Recruit>section:nth-child(2)>div>div>ul{
+/* #Recruit>section:nth-child(2)>div>div>ul{
     width: 4950px;
     overflow: hidden;
     margin-bottom: 85px;
@@ -54,27 +54,58 @@
     padding-left: 6px;
     font-size: 18px;
     color: #af0046;
+} */
+.status{
+    width: 550px;
+    padding-left: 6px;
+    margin: 0 auto 20px;
+    box-sizing: border-box;
+    font-weight: bolder;
+    color: #af0043;
 }
-.question{
+.Q{
     margin-bottom: 100px;
     padding-left: 5px;
     font-size: 27px;
     font-weight: bold;
     line-height: 45px;
 }
-.answer>dd{
+.A>button{
+    display: block;
     width: 100%;
     margin-bottom: 15px;
+    text-align: left;
     text-indent: 25px;
     line-height: 48px;
     border: 1px solid #fff;
     border-radius: 25px 25px;
     box-sizing: border-box;
     background-color: #fff;
+    cursor: pointer;
+}
+.A>button:hover{
+    border: 1px solid #af0043!important;
+    box-sizing: border-box;
+    color: #af0043!important;
+    background-color: #fff4f6!important;
+    border-radius: 25px 25px;
+}
+
+@keyframes fadeIn {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+@keyframes fadeOut {
+    from{opacity: 1;}
+    to{opacity: 0;}
 }
 
 .fadeIn{
     animation: fadeIn;
+    animation-duration: 0.5s;
+}
+.fadeOut{
+    animation: fadeOut;
     animation-duration: 0.5s;
 }
 
@@ -95,7 +126,7 @@
 #lgtiModal{
     width: 500px;
     padding: 50px 0;
-    border: 5px solid #af0046;
+    border: 5px solid #af0043;
     text-align: center;
     background-color: #fff;
     position: fixed;
@@ -147,7 +178,7 @@
 }
 #lgtiModal>ul:last-child li:last-child{
     color: #fff;
-    background-color: #af0046;
+    background-color: #af0043;
 }
 
 /* 이미지 정리 */

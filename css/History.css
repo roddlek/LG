@@ -178,7 +178,7 @@ section>div>ol li>dl>dd>img:first-child{
 
 /* 스크롤 */
 .scrollBar{
-    width: 30%;
+    width: 480px;
     position: absolute;
     left: 50%; bottom: 15px;
     transform: translateX(-50%);
@@ -193,11 +193,12 @@ section>div>ol li>dl>dd>img:first-child{
     position: relative;
 }
 .scrollBar>div>span{
-    width: 50px;
+    width: 80px;
     height: 15px;
     border-radius: 20px;
     background-color: #af0046;
     position: absolute;
     left: 0; top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
 }

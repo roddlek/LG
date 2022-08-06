@@ -24,34 +24,11 @@ $(function(){
         //초기 설정
         let pageNum = $(this).children("a").attr('href');
         let historyW = $(pageNum).position().left
-        console.log(pageNum, historyW)
+        //console.log(pageNum, historyW)
         //페이지 이동 액션
         $('section>div:nth-child(4)>ol:not(:animated)').animate({marginLeft: '-=' + historyW + 'px'}, 1000);
         return false;
     })
-
-    ///////////스크롤 버튼
-    // $('section>div:nth-child(4)>ol').on( "mousemove", function( event ) {
-    //     let olPageX = event.pageX;
-    //     //$('.scrollBar>div>span').event.pageX = olPageX;
-    //     console.log(olPageX);
-    //     $('.scrollBar>div>span').css({left:olPageX+'px'});
-    //   });
     
-    let olWidth = $('section>div:nth-child(4)').width()
-    $('section>div:nth-child(4)').on( "mousewheel", function( event, x ) {
-        $(document).on('scroll touchmove', function(event){
-            event.preventDefault();
-            event.stopPropagation();
-            return false;
-        })
-        if(x > 0){
-            $('section>div:nth-child(4)>ol').animate({marginLeft: -x * 50 + 'px'}, 700, function(){
-                let nowOlWidth = $('section>div:nth-child(4)>ol').css('margin-left');
-                $('section>div:nth-child(4)>ol').css('margin-left', nowOlWidth + 'px');
-            });
-        }else if(x < olWidth){
-            $('section>div:nth-child(4)>ol').animate({marginLeft: x * 50 + 'px'}, 700);
-        }
-      });
+   
 })

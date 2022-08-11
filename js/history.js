@@ -24,11 +24,8 @@ $(function(){
         //초기 설정
         let pageNum = $(this).children("a").attr('href');
         let historyW = $(pageNum).position().left
-        //console.log(pageNum, historyW)
         //페이지 이동 액션
         $('section>div:nth-child(4)>ol:not(:animated)').animate({marginLeft: '-=' + historyW + 'px'}, 1000);
         return false;
-    })
-    
-   
+    });
 })

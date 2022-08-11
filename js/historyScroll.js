@@ -1,11 +1,10 @@
 //스크롤 퍼센트 이벤트
 window.addEventListener('scroll', function(e){
-    //컨텐츠
-    //const contentBox = document.querySelector('section>div:nth-child(4)');
-    // const content = document.querySelector('section>div:nth-child(4)>ol');
-    //스크롤 퍼센트 계산
-    //let scrollWidth = content.offsetWidth - contentBox.clientWidth;
-    //let scrollPercent = ( window.scrollX / scrollWidth ) * 100;
+    //콘텐츠
+    const contentBox = document.querySelector('section>div:nth-child(4)');
+    const content = document.querySelector('section>div:nth-child(4)>ol');
+    //숨어있는 콘텐츠 크기 계싼
+    let scrollWidth = content.offsetWidth - contentBox.clientWidth;
 
     //스크롤 바
     const scrollBar = document.querySelector('.scrollBar>div>span');
@@ -22,7 +21,7 @@ window.addEventListener('scroll', function(e){
             e.preventDefault();
             
             const scrollBox = document.querySelector('.scrollBar>div');
-            const content = document.querySelector('section>div:nth-child(4)>ol');
+            //const content = document.querySelector('section>div:nth-child(4)>ol');
 
             let newThumbX = e.clientX - moveX - leftX;
             let rightScroll = scrollBox.clientWidth - scrollBar.offsetWidth;
@@ -34,7 +33,10 @@ window.addEventListener('scroll', function(e){
             }
 
             scrollBar.style.left = newThumbX + 'px';
-            console.log(content.offsetLeft);
+
+            let contentScroll = (scrollWidth / 400) * newThumbX;
+            content.style.marginLeft = (-1 * contentScroll) + 'px';
+            console.log(contentScroll);
         }
 
         function onMouseUp(e){

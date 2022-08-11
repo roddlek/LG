@@ -1,12 +1,13 @@
 $(function(){
+    $('.subNav').hide();
     ///////////네비게이션
-    $('header>div>nav>ul:first>li').on('mouseover', function(){
-        $('div.subNav').hide();
-        $(this).children('div.subNav').slideDown('slow');
-        $(this).children('div.subNav');
+    $('header>div>nav>ul>li').on('mouseover', function(){
+        $('header').animate({height: 260 + 'px'}, 600);
+        $(this).siblings('ul').show();
+        
     });
-    $('div.subNav').on('mouseleave', function(){
-        $(this).slideUp();
+    $('header>div>nav>ul').on('mouseleave', function(){
+        $('header').animate({height: 60 + 'px'}, 600);
     });
 
     ///////////푸터

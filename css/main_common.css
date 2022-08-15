@@ -151,6 +151,7 @@ footer>div{
     overflow: hidden;
 }
 footer>div>h1{
+    width: 70px;
     float: left;
 }
 .footerMenu{

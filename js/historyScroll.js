@@ -8,7 +8,7 @@ scrollEvent(secDiv, secOl);
 
 //연혁 탭 메뉴 클릭할 때 실행될 스크롤 이벤트 함수
 allTabBtn.forEach( (item) => {
-    item.addEventListener('click', function(e){
+    item.addEventListener('click', function(){
         //아이디 값 얻기
         let aId = this.querySelector('a').getAttribute('href');
         //콘텐츠 선택자 정리
@@ -20,7 +20,11 @@ allTabBtn.forEach( (item) => {
     });
 })
 
-//스크롤 이벤트
+/**
+ * section의 콘텐츠 width 값을 가져와 크기에 맞는 스크롤 이벤트 함수
+ * @param a div의 width 값
+ * @param b ol의 width 값
+ */
 function scrollEvent(a, b){
     window.addEventListener('scroll', function(){
         //숨어있는 콘텐츠 크기 계싼

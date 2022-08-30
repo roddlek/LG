@@ -93,14 +93,19 @@ header nav>ul>li>a{
     object-fit: cover;
 }
 .subNav li figure figcaption{
+    width: 100%;
     color: #fff;
+}
+.subNav li figure figcaption>a{
+    display: block;
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
 }
-.subNav li figure figcaption>span{
+.subNav li figure figcaption>a>span{
     display: block;
-    width: 20px;
+    width: 10px;
     margin-right: 8px;
     border-bottom: 1px solid #fff;
     box-sizing: border-box;
@@ -108,9 +113,11 @@ header nav>ul>li>a{
 
 .closeBtn{
     display: none;
+    cursor: pointer;
 }
 .mobileBtn{
     display: none;
+    cursor: pointer;
 }
 
 

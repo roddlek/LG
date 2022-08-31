@@ -41,16 +41,25 @@ function endPlay(){
     modal.style.display = 'block';
 }
 
+/**
+ * 
+ * @param {string} answerText 질문에 대한 답
+ * @param {string} answerRate 결과 산출을 위한 점수 
+ * @param {number} num 증가하는 초기값
+ */
 function addAnswer(answerText, answerRate, num){
     //기본 설정
     const answer = document.querySelector('.A');
     const aList = document.createElement('button');
+
     //클래스, 속성 추가
     aList.classList.add('aList');
     aList.setAttribute('value', answerRate);
     const attr = aList.getAttribute('value');
+
     //답 버튼 삽입
     answer.appendChild(aList);
+
     //받은 parameter들을 innerHTML
     aList.innerHTML = answerText;
 
@@ -76,6 +85,7 @@ function addAnswer(answerText, answerRate, num){
     }, false)
 }
 
+
 function play(num){
     if(num === endIdx){
         endPlay();
@@ -83,6 +93,7 @@ function play(num){
 
     const question = document.querySelector('.Q');
     question.innerHTML = listData[num].q;
+    
     for(let i in listData[num].a){
         //반복문으로 도는 데이터들을 parameter로 전달
         addAnswer(listData[num].a[i].answer, listData[num].a[i].rate, num);

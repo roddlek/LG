@@ -1,6 +1,6 @@
 $(function(){
 
-    // 마우스를 오버했을 때 슬라이드 다운 함수
+    // 마우스를 오버했을 때 슬라이드 다운 함수 - pc
     function navSlide(){
         //보이지 않는 요소 처리
         $('#suNavBG').css('display', 'none');
@@ -14,7 +14,7 @@ $(function(){
             $('.mainNav').stop().animate({height: 60 + 'px'}, 600);
         });
     }
-    // 반응형 - 마우스를 오버했을 때 슬라이드 다운 함수
+    // 마우스를 오버했을 때 슬라이드 다운 함수 - mobile
     function navSlideM(){
         $('.mainNav>div>nav, #suNavBG').css('display', 'none');
         //열기, 닫기 버튼 클릭 이벤트 함수
@@ -34,37 +34,34 @@ $(function(){
         });
     }
 
-    //반응형  맞춤
+    //반응형 맞춤
     const screen = $(window).innerWidth();
+    //resize를 했을 때 화면 크기 조건에 맞는 함수 실행
     function screenResize(){
         $(window).on('resize', function(){
             if(screen <= 980){
                 navSlideM();
-                //$('div>nav').load(window.location.href + ' div>nav');
-                location.reload();
             }else{
                 navSlide();
             }
+            window.location.reload();
         })
     }
     function screenLoad(){
-        //console.log(screen);
         $(window).on('load', function(){
             if(screen > 980){
-                //기존 + 리사이즈 조건 충족
                 navSlide();
             }else{
                 navSlideM();
             }
+            screenResize();
         })
     }
 
     // 탑버튼 클릭했을 때 scrollTop 초기화 함수
-    function topBtn(){
-        $('aside').click(function(e){
-            $('html, body').animate({scrollTop: 0}, 600);
-        })
-    }
+    $('aside').click(function(e){
+        $('html, body').animate({scrollTop: 0}, 600);
+    })
 
     // 푸터 관련 사이트 메뉴창 투글 함수
     function siteMenu (){
@@ -81,9 +78,6 @@ $(function(){
         })
     }
 
-    //navSlide();
     screenLoad();
-    //screenResize();
-    topBtn();
     siteMenu();
 })

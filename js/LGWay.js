@@ -1,18 +1,21 @@
 $(function(){
     ///////////스크롤 버튼 클릭 액션
-    //클래스 초기 설정
-    $('.srollBtn>ul>li>a').first().addClass('clicked');
-    $('.srollBtn>ul>li>a').on('click', function(e){
-        //초기 설정
-        $('.srollBtn>ul>li>a').removeClass('clicked');
-        $(this).addClass('clicked');
+    function scrollBtn(){
+        //클래스 초기 설정
+        $('.srollBtn>ul>li>a').first().addClass('clicked');
 
-        let secH = $('.srollBtn').innerHeight();
-        let secId = $(this).attr('href');
-        let secTop = $(secId).offset().top;
-        //스크롤 액션
-        $('html, body').animate({scrollTop: secTop - secH + 'px'}, 800);
-    });
+        $('.srollBtn>ul>li>a').on('click', function(){
+            //초기 설정
+            $('.srollBtn>ul>li>a').removeClass('clicked');
+            $(this).addClass('clicked');
+    
+            let secH = $('.srollBtn').innerHeight();
+            let secId = $(this).attr('href');
+            let secTop = $(secId).offset().top;
+            //스크롤 액션
+            $('html, body').animate({scrollTop: secTop - secH + 'px'}, 800);
+        });
+    }
 
     ///////////스크롤 액션
     $(window).scroll(function(){
@@ -32,27 +35,32 @@ $(function(){
     });
 
     ///////////모달창
-    //초기 설정
-    $('#modalBG').css({display: 'none'});
-    $('.LGWayModal').css({display: 'none'});
-    //클릭 이벤트
-    $('#LGWayManage>div>p').click(function(e){
-        let modalNum = $(this).index()
-        console.log(modalNum);
-        if(modalNum == 0){
-            $('#modalBG').css({display: 'block'});
-            $('.LGWayModal').first().css({display: 'block'});
-            $('.LGWayModal>p').click(function(e){
-                $('#modalBG').css({display: 'none'});
-                $('.LGWayModal').css({display: 'none'});
-            });
-        }else if(modalNum == 2){
-            $('#modalBG').css({display: 'block'});
-            $('.LGWayModal').last().css({display: 'block'});
-            $('.LGWayModal>p').click(function(e){
-                $('#modalBG').css({display: 'none'});
-                $('.LGWayModal').css({display: 'none'});
-            });
-        }
-    })
+    function modal(){
+        //초기 설정
+        $('#modalBG').css({display: 'none'});
+        $('.LGWayModal').css({display: 'none'});
+        //클릭 이벤트
+        $('#LGWayManage>div>p').click(function(e){
+            let modalNum = $(this).index()
+            //console.log(modalNum);
+            if(modalNum == 0){
+                $('#modalBG').css({display: 'block'});
+                $('.LGWayModal').first().css({display: 'block'});
+                $('.LGWayModal>p').click(function(e){
+                    $('#modalBG').css({display: 'none'});
+                    $('.LGWayModal').css({display: 'none'});
+                });
+            }else if(modalNum == 2){
+                $('#modalBG').css({display: 'block'});
+                $('.LGWayModal').last().css({display: 'block'});
+                $('.LGWayModal>p').click(function(e){
+                    $('#modalBG').css({display: 'none'});
+                    $('.LGWayModal').css({display: 'none'});
+                });
+            }
+        })
+    }
+
+    scrollBtn();
+    modal();
 })

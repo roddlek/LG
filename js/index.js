@@ -1,30 +1,21 @@
 $(function(){
-    ///////////갤러리
-    //사이즈 정리
-    let liWidth = $('#gallery>div>ul>li').width();
-    $(window).resize(function(){
-        let divWidth = $('#gallery>div').width();
-        let ulWidth = $('#gallery>div>ul').width();
-        ulWidth = divWidth * 4;
-        liWidth = divWidth;
-    })
     //초기 설정
+    let liWidth = $('#gallery>div>ul>li').width();
     $('#gallery>div>ul>li:last').prependTo('#gallery>div>ul');
     $('#gallery>div>ul').css('margin-left', '-' + liWidth + 'px');
-    //갤러리 애니메이션
+    
+    ///////////갤러리
     function gallery(){
-        //타이틀 초기 설정
         $('#gallery>div>ul>li>a').not('#gallery>div>ul>li>a:eq(1)').fadeOut();
-        //이미지
+        //애니메이션
         $('#gallery>div>ul').animate({marginLeft: '-=' + liWidth + 'px'}, 600, function(){
             $('#gallery>div>ul>li:first').appendTo('#gallery>div>ul');
             $('#gallery>div>ul').css('margin-left', '-' + liWidth + 'px');
-            //타이틀
             $('#gallery>div>ul>li>a').fadeIn();
         });
+
         //슬라이드 버튼
-        //초기 설정
-        $('#slideBtn>a').click(function(e){
+        $('#slideBtn>a').click(function(){
             let slideIndex = $(this).index() + 1;
             //console.log(slideIndex);
             if(slideIndex < 4){
@@ -34,6 +25,7 @@ $(function(){
             }
         })
     }
+
     //갤러리 타이머
     function timer(){
         move = setInterval(gallery, 3500);
